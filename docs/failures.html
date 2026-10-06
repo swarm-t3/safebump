@@ -13,7 +13,7 @@ section{border-top:1px solid #d0d7de;padding-top:8px}li{margin:4px 0}code{backgr
 </style></head><body>
 <p><a href="./">SafeBump</a> / update failures</p>
 <h1>OpenClaw update failed? Find your reason code</h1>
-<p>OpenClaw's <b>Report update failure</b> button files a public issue titled <code>Update failure: &lt;reason-code&gt; (&lt;version&gt;)</code>. Since 2026-09-01 there have been <b>702</b> of them, <b>112</b> in the last 7 days. Platforms: darwin/arm64 284, linux/x64 192, win32/x64 162, darwin/x64 37, linux/arm64 24. This page groups them by reason code, sums up what the <a href="https://docs.openclaw.ai/install/update-troubleshooting">official docs</a> say to do, and links the latest reports. Updated 2026-10-06 16:19 UTC.</p>
+<p>OpenClaw's <b>Report update failure</b> button files a public issue titled <code>Update failure: &lt;reason-code&gt; (&lt;version&gt;)</code>. Since 2026-09-01 there have been <b>702</b> of them, <b>112</b> in the last 7 days. Platforms: darwin/arm64 284, linux/x64 192, win32/x64 162, darwin/x64 37, linux/arm64 24. This page groups them by reason code, sums up what the <a href="https://docs.openclaw.ai/install/update-troubleshooting">official docs</a> say to do, and links the latest reports. Updated 2026-10-06 16:30 UTC.</p>
 <p class="rec">One thing most people miss: if you're on <b>2026.9.3 or 2026.9.4</b>, several failures live in the updater you already have installed, so retrying <code>openclaw update</code> won't fix them. The docs' answer is to do the <a href="https://docs.openclaw.ai/install/updating/update-methods#alternative-manual-npm-pnpm-or-bun">manual package-manager update</a> once. Back up first.</p>
 <div class="offer">
 <h2>Did an update already break your agent?</h2>
@@ -25,8 +25,8 @@ section{border-top:1px solid #d0d7de;padding-top:8px}li{margin:4px 0}code{backgr
 <li>Most fixes take under 24 hours. If we can't fix it, you pay nothing.</li>
 <li>Pay after the fix in USDT on Arbitrum One, or by card through Whop on request.</li>
 </ul>
-<a class="btn" href="https://github.com/swarm-t3/safebump/issues/new?template=rescue.yml">Request a rescue (GitHub)</a>
-<a class="btn" href="mailto:megafi.app1+safebump@gmail.com?subject=Update%20Rescue%20request&body=OpenClaw%20version%20before%2Fafter%3A%0AOS%20and%20install%20type%20(npm%2Fpnpm%2Fbun%2Fdocker)%3A%0AWhat%20broke%3A%0A">Request by email</a>
+<a class="btn" data-goatcounter-click="rescue-github" href="https://github.com/swarm-t3/safebump/issues/new?template=rescue.yml">Request a rescue (GitHub)</a>
+<a class="btn" data-goatcounter-click="rescue-email" href="mailto:megafi.app1+safebump@gmail.com?subject=Update%20Rescue%20request&body=OpenClaw%20version%20before%2Fafter%3A%0AOS%20and%20install%20type%20(npm%2Fpnpm%2Fbun%2Fdocker)%3A%0AWhat%20broke%3A%0A">Request by email</a>
 <p><small>Would rather keep it private? Use email. A GitHub request is public, so don't paste secrets or logs that contain tokens there.</small></p>
 </div>
 <table><tr><th>Reason code</th><th>Reports</th><th>Open</th><th>Most common versions</th></tr>
@@ -90,4 +90,5 @@ section{border-top:1px solid #d0d7de;padding-top:8px}li{margin:4px 0}code{backgr
 <section id="managed-service-handoff-already-running"><h3><code>managed-service-handoff-already-running</code>: 3 reports, 2 still open</h3><p><b>What it means:</b> No plain-English summary yet.</p><p><b>What to do:</b> See the <a href="https://docs.openclaw.ai/install/update-troubleshooting">update troubleshooting docs</a>.</p><details><summary>Latest reports</summary><ul><li><a href="https://github.com/openclaw/openclaw/issues/150893">#150893</a> 2026.9.3 · linux/x64 · 2026-09-17 · closed (not_planned)</li><li><a href="https://github.com/openclaw/openclaw/issues/148350">#148350</a> 2026.9.3 · linux/arm64 · 2026-09-14 · open</li><li><a href="https://github.com/openclaw/openclaw/issues/148321">#148321</a> 2026.9.3 · linux/x64 · 2026-09-14 · open</li></ul></details></section>
 <section id="managed-service-handoff-unsafe-recovery"><h3><code>managed-service-handoff-unsafe-recovery</code>: 3 reports, 2 still open</h3><p><b>What it means:</b> No plain-English summary yet.</p><p><b>What to do:</b> See the <a href="https://docs.openclaw.ai/install/update-troubleshooting">update troubleshooting docs</a>.</p><details><summary>Latest reports</summary><ul><li><a href="https://github.com/openclaw/openclaw/issues/149249">#149249</a> 2026.9.4 · darwin/x64 · 2026-09-15 · closed (completed)</li><li><a href="https://github.com/openclaw/openclaw/issues/144706">#144706</a> 2026.9.4 · darwin/arm64 · 2026-09-11 · open</li><li><a href="https://github.com/openclaw/openclaw/issues/142744">#142744</a> 2026.9.3 · darwin/x64 · 2026-09-09 · open</li></ul></details></section>
 <p><small>Summaries paraphrase the OpenClaw docs. When in doubt the docs win. SafeBump is independent and not affiliated with the OpenClaw project. Data: <a href="failures.json">failures.json</a>.</small></p>
+<script data-goatcounter="https://safebump.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body></html>
