@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06 16:29 UTC",
+ "generated_at": "2026-10-06 16:37 UTC",
  "repo": "openclaw/openclaw",
  "window_days": 14,
  "recommended": null,
@@ -861,6 +861,20 @@
      "reactions": 1
     },
     {
+     "number": 152804,
+     "title": "Regression 2026.9.5: minimax-portal loses its model catalog after upgrade (heartbeat/main-lane fail with 'Unknown model: minimax-portal/MiniMax-M3')",
+     "url": "https://github.com/openclaw/openclaw/issues/152804",
+     "state": "open",
+     "comments": 13,
+     "created": "2026-09-19",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 156112,
      "title": "openclaw update fails at \"global install swap\" while a direct npm install -g of the same version succeeds (npm global, 2026.9.4 \u2192 2026.9.5)",
      "url": "https://github.com/openclaw/openclaw/issues/156112",
@@ -873,20 +887,6 @@
       "impact:ux-release-blocker"
      ],
      "reactions": 1
-    },
-    {
-     "number": 152804,
-     "title": "Regression 2026.9.5: minimax-portal loses its model catalog after upgrade (heartbeat/main-lane fail with 'Unknown model: minimax-portal/MiniMax-M3')",
-     "url": "https://github.com/openclaw/openclaw/issues/152804",
-     "state": "open",
-     "comments": 12,
-     "created": "2026-09-19",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 0
     },
     {
      "number": 154812,
@@ -927,11 +927,11 @@
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
    "age_hours": 612,
    "issues_total": 300,
-   "issues_open": 170,
-   "open_p0": 70,
-   "open_severe": 76,
+   "issues_open": 171,
+   "open_p0": 71,
+   "open_severe": 77,
    "verdict": "hold",
-   "why": "70 open P0 and 76 open crash/blocker issues reported against it.",
+   "why": "71 open P0 and 77 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 149538,
@@ -978,6 +978,20 @@
      "reactions": 2
     },
     {
+     "number": 152804,
+     "title": "Regression 2026.9.5: minimax-portal loses its model catalog after upgrade (heartbeat/main-lane fail with 'Unknown model: minimax-portal/MiniMax-M3')",
+     "url": "https://github.com/openclaw/openclaw/issues/152804",
+     "state": "open",
+     "comments": 13,
+     "created": "2026-09-19",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 155859,
      "title": "[Bug]: Gateway startup wall-time scales with enabled plugin count on 2026.9.5; discord, codex and openclaw-weixin dominate the 120s publication budget",
      "url": "https://github.com/openclaw/openclaw/issues/155859",
@@ -1005,20 +1019,6 @@
       "impact:ux-release-blocker"
      ],
      "reactions": 1
-    },
-    {
-     "number": 152804,
-     "title": "Regression 2026.9.5: minimax-portal loses its model catalog after upgrade (heartbeat/main-lane fail with 'Unknown model: minimax-portal/MiniMax-M3')",
-     "url": "https://github.com/openclaw/openclaw/issues/152804",
-     "state": "open",
-     "comments": 12,
-     "created": "2026-09-19",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 0
     },
     {
      "number": 154114,
@@ -1175,14 +1175,14 @@
      "title": "Regression 2026.9.5: minimax-portal loses its model catalog after upgrade (heartbeat/main-lane fail with 'Unknown model: minimax-portal/MiniMax-M3')",
      "url": "https://github.com/openclaw/openclaw/issues/152804",
      "state": "open",
-     "comments": 12,
+     "comments": 13,
      "created": "2026-09-19",
      "prio": "P0",
      "severe": [
       "P0",
       "impact:ux-release-blocker"
      ],
-     "reactions": 0
+     "reactions": 1
     },
     {
      "number": 146887,

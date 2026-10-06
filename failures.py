@@ -71,7 +71,7 @@ def main():
     per_day = collections.Counter()
     plat = collections.Counter()
     for it in items:
-        m = re.match(r"Update failure: (\S+) \((\S+)\)", it["title"])
+        m = re.match(r"Update failure: ([a-z][^\s(]*) \((\S+)\)", it["title"])
         if not m:
             continue
         pm = re.search(r"Platform: (\S+)", it.get("body") or "")
@@ -92,7 +92,7 @@ def main():
             continue
         open_n = sum(1 for x in g if x["state"] == "open")
         vers = collections.Counter(x["v"] for x in g).most_common(4)
-        toc.append(f'<tr><td><a href="#{e(code)}">{e(code)}</a></td><td>{len(g)}</td><td>{open_n}</td>'
+        toc.append(f'<tr><td><a href="code/{re.sub(r"[^a-z0-9-]", "-", code.lower())}.html">{e(code)}</a></td><td>{len(g)}</td><td>{open_n}</td>'
                    f'<td>{e(", ".join(f"{v} ({c})" for v, c in vers))}</td></tr>')
         what, do = GUIDE.get(code, ("No plain-English summary yet.", f"See the <a href=\"{TROUBLE}\">update troubleshooting docs</a>."))
         recent = "".join(f'<li><a href="{e(x["url"])}">#{x["n"]}</a> {e(x["v"])} · {e(x["platform"])} · {x["created"]} · {x["state"]}'
@@ -113,6 +113,29 @@ def main():
            .replace("{{TOC}}", "\n".join(toc)).replace("{{SECTIONS}}", "\n".join(secs)))
     with open(os.path.join(OUT, "failures.html"), "w") as f:
         f.write(out)
+    head = tpl.split("<body>")[0] + "<body>"
+    offer = '<div class="offer">' + tpl.split('<div class="offer">')[1].split("</div>")[0] + "</div>"
+    tail = tpl[tpl.index("<script data-goatcounter"):] if "goatcounter" in tpl else "</body></html>"
+    os.makedirs(os.path.join(OUT, "code"), exist_ok=True)
+    pages = []
+    for sec, code in zip(secs, [c for c in order if len(groups[c]) >= 3 or c in GUIDE]):
+        slug = re.sub(r"[^a-z0-9-]", "-", code.lower())
+        title = f"OpenClaw update failed with {code}: what it means and how to fix it | SafeBump"
+        h = (head.replace(head[head.index("<title>"):head.index("</title>") + 8], f"<title>{e(title)}</title>")
+             .replace('href="./"', 'href="../"'))
+        page = (h + f'<p><a href="../">SafeBump</a> / <a href="../failures.html">update failures</a> / {e(code)}</p>'
+                + f"<h1>OpenClaw update failure: <code>{e(code)}</code></h1>" + sec.replace("<details>", "<details open>")
+                + '<p class="rec">Before you retry, <code>openclaw update status --json</code> shows the unredacted failing step on your machine, and <code>openclaw gateway status --deep</code> shows what is actually serving. A retry overwrites that history.</p>'
+                + offer.replace('href="pay.html"', 'href="../pay.html"').replace('href="https://github.com/swarm-t3/safebump/issues/new?template=rescue.yml"', 'href="https://github.com/swarm-t3/safebump/issues/new?template=rescue.yml&title=%5BRescue%5D+' + e(code) + '"')
+                + f'<p><a href="../failures.html">All reason codes</a> · <a href="../">Is it safe to update? Per-release verdicts</a></p>' + tail)
+        with open(os.path.join(OUT, "code", slug + ".html"), "w") as f:
+            f.write(page)
+        pages.append(f"code/{slug}.html")
+    base = "https://swarm-t3.github.io/safebump/"
+    urls = ["", "failures.html", "pay.html"] + pages
+    with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                + "".join(f"<url><loc>{base}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
     print(total, last7, order[:8])
 
 
