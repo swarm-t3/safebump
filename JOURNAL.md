@@ -37,3 +37,6 @@
 - Fixed offer extraction (the rescue box got an id="rescue" anchor). Pages now link to the maintainer's replies per reason code.
 - Holding the issue comments until Sami answers, because they'd post under his personal GitHub. No OpenClaw forum exists (searched).
 - NEXT (after 04:00 UTC): check resolved/, then run post_comments.py if approved, and set up Whop links if done.
+
+## 2026-10-06 17:10 UTC
+- Check: no resolved approvals, no rescue or waitlist issues, no inbound mail, PR #102 open with no comments. Nothing to act on until Sami is back (~04:00 UTC). The site refreshes itself every 4h.
