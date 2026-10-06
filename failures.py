@@ -138,7 +138,9 @@ def main():
             f.write(page)
         pages.append(f"code/{slug}.html")
     base = "https://swarm-t3.github.io/safebump/"
-    urls = ["", "failures.html", "pay.html"] + pages
+    vdir = os.path.join(OUT, "v")
+    vpages = sorted("v/" + n for n in os.listdir(vdir)) if os.path.isdir(vdir) else []
+    urls = ["", "failures.html", "pay.html"] + vpages + pages
     with open(os.path.join(OUT, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
                 + "".join(f"<url><loc>{base}{u}</loc></url>\n" for u in urls) + "</urlset>\n")

@@ -110,7 +110,7 @@ def render(data):
         label, color = BADGE[v["verdict"]]
         pre = "" if v["line"] == "stable" else f' <small>({v["line"]})</small>'
         rows.append(
-            f'<tr><td><a href="#v{e(v["version"])}">{e(v["version"])}</a>{pre}</td><td>{v["published"]}</td>'
+            f'<tr><td><a href="v/{e(v["version"])}.html">{e(v["version"])}</a>{pre}</td><td>{v["published"]}</td>'
             f'<td><span class="b" style="background:{color}">{label}</span></td>'
             f'<td>{v["open_p0"]}</td><td>{v["open_severe"]}</td><td>{v["issues_open"]}/{v["issues_total"]}</td></tr>')
         lis = "".join(
@@ -133,6 +133,38 @@ def render(data):
             .replace("{{ROWS}}", "\n".join(rows)).replace("{{CARDS}}", "\n".join(cards)))
 
 
+def version_pages(data):
+    e = html.escape
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "template.html")) as f:
+        tpl = f.read()
+    head = tpl.split("<body>")[0] + "<body>"
+    offer = '<div class="offer">' + tpl.split('<div class="offer">')[1].split("</div>")[0] + "</div>"
+    offer = offer.replace('href="pay.html"', 'href="../pay.html"')
+    tail = tpl[tpl.index("<script data-goatcounter"):]
+    os.makedirs(os.path.join(OUT, "v"), exist_ok=True)
+    for v in data["versions"]:
+        label, color = BADGE[v["verdict"]]
+        title = f"Is OpenClaw {v['version']} safe to update? Known issues and verdict | SafeBump"
+        h = head.replace(head[head.index("<title>"):head.index("</title>") + 8], f"<title>{e(title)}</title>")
+        lis = "".join(
+            f'<li><a href="{e(i["url"])}">#{i["number"]}</a> {e(i["title"][:140])} '
+            f'<small>{e(" ".join(([i["prio"]] if i["prio"] else []) + i["severe"]))} · {i["comments"]} comments · opened {i["created"]}</small></li>'
+            for i in v["top"]) or "<li>No open issues mention this version yet.</li>"
+        alt = data.get("recommended_extended")
+        page = (h + f'<p><a href="../">SafeBump</a> / {e(v["version"])}</p>'
+                f'<h1>Is OpenClaw {e(v["version"])} safe to update?</h1>'
+                f'<p class="rec"><span class="b" style="background:{color}">{label}</span> {e(v["why"])}</p>'
+                f'<p>Line: <b>{e(v["line"])}</b>. Released {v["published"]} (<a href="{e(v["url"])}">release notes</a>). '
+                f'Issues opened in the {data["window_days"]} days after release that name this version: {v["issues_total"]}, of which {v["issues_open"]} are still open, '
+                f'{v["open_p0"]} open P0 and {v["open_severe"]} open crash-loop or release-blocker. Updated {data["generated_at"]}.</p>'
+                f'<h2>Top open issues reported against {e(v["version"])}</h2><ul>{lis}</ul>'
+                + (f'<p>Want stability over features? The newest extended-stable (LTS) release without known blockers is <b>{e(alt)}</b>.</p>' if alt else "")
+                + '<p>Update already failed? <a href="../failures.html">Look up your reason code</a>.</p>'
+                + offer + '<p><a href="../">All releases</a></p>' + tail)
+        with open(os.path.join(OUT, "v", v["version"] + ".html"), "w") as f:
+            f.write(page)
+
+
 def main():
     vs = []
     for rel in releases():
@@ -149,6 +181,7 @@ def main():
         json.dump(data, f, indent=1)
     with open(os.path.join(OUT, "index.html"), "w") as f:
         f.write(render(data))
+    version_pages(data)
     print(json.dumps([(v["version"], v["verdict"], v["open_p0"], v["open_severe"], v["issues_total"]) for v in vs]))
 
 
