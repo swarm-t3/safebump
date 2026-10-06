@@ -1,0 +1,22 @@
+name: Update Rescue request ($149, pay after it works)
+description: An OpenClaw update broke your agent. We get you back to a stable, pinned version. You pay only once it works.
+title: "[Rescue] "
+labels: ["rescue"]
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Do not paste API keys, tokens, phone numbers or private logs here. Prefer privacy? Email megafi.app1+safebump@gmail.com instead."
+  - type: input
+    id: versions
+    attributes: {label: "Version before and after the update", placeholder: "2026.9.4 -> 2026.9.8"}
+    validations: {required: true}
+  - type: input
+    id: install
+    attributes: {label: "OS and install type", placeholder: "Ubuntu 24.04, npm global, managed service"}
+  - type: textarea
+    id: what
+    attributes: {label: "What broke", description: "Symptoms and the first error you see (redact secrets)."}
+    validations: {required: true}
+  - type: input
+    id: contact
+    attributes: {label: "How should we reach you privately? (optional)", placeholder: "email, Telegram, Discord"}

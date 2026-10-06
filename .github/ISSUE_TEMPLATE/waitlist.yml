@@ -1,0 +1,17 @@
+name: Release Watch waitlist ($19/month, first month free)
+description: A per-release verdict for your OpenClaw setup before you update.
+title: "[Waitlist] "
+labels: ["waitlist"]
+body:
+  - type: input
+    id: setup
+    attributes: {label: "Your setup", placeholder: "Telegram + WhatsApp, Anthropic + OpenAI, macOS, npm"}
+  - type: dropdown
+    id: price
+    attributes:
+      label: "Would you pay $19/month for this?"
+      options: ["Yes", "Yes, but only at a lower price", "Only the free page"]
+    validations: {required: true}
+  - type: input
+    id: contact
+    attributes: {label: "Email for alerts (optional; we also notify you on this issue)"}
