@@ -4,6 +4,7 @@ import datetime as dt
 import html
 import json
 import os
+import re
 import subprocess
 import time
 import urllib.parse
@@ -90,7 +91,7 @@ def summarise(version, rel):
     else:
         verdict, why = "ok", "No open P0, crash-loop or release-blocker issues reported against it yet."
     top = sorted(open_, key=lambda i: (bool(i["severe"]), i["prio"] == "P0", i["comments"]), reverse=True)[:8]
-    line = "beta" if rel["prerelease"] else ("extended-stable" if "extended-stable" in (rel.get("body") or "")[:400] else "stable")
+    line = "beta" if rel["prerelease"] else ("extended-stable" if re.search(r"extended.stable", (rel.get("body") or "")[:600], re.I) else "stable")
     return {
         "version": version, "line": line, "tag": rel["tag_name"], "published": published, "prerelease": rel["prerelease"],
         "url": rel["html_url"], "age_hours": int(age_h), "issues_total": len(out), "issues_open": len(open_),
