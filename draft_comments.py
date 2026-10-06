@@ -2,6 +2,7 @@
 """Draft tailored replies for open 'Update failure:' issues. Output: posts/github-comment-drafts.json (posting needs an approved identity)."""
 import json, re, datetime as dt
 from generate import get
+from failures import maintainer_replies
 
 MANUAL = "https://docs.openclaw.ai/install/updating/update-methods#alternative-manual-npm-pnpm-or-bun"
 ROLLBACK = "https://docs.openclaw.ai/install/updating/rollback-and-recovery"
@@ -27,7 +28,7 @@ FOOTER = ("\n\nFor context: every 2026.9.x stable release currently has open P0 
           "If you'd rather have someone do this with you, SafeBump does a fixed-price rescue that you pay for only once it works (details on that page). Either way, I hope the above gets you there.")
 
 
-def draft(it):
+def draft(it, maint={}):
     m = re.match(r"Update failure: (\S+) \((\S+)\)", it["title"])
     code, v = m.group(1), m.group(2)
     body = it.get("body") or ""
@@ -41,6 +42,9 @@ def draft(it):
     parts.append(CODE.get(code, f"`{code}` isn't covered in detail by the docs yet. Check the Gateway logs and the saved failure context under `logs/support/` before retrying ([troubleshooting]({TROUBLE}))."))
     if v in ("2026.9.3", "2026.9.4"):
         parts.append(OLD_UPDATER.format(v=v))
+    if maint.get(code):
+        n = maint[code][0][0]
+        parts.append(f"The maintainer's reply on a similar `{code}` report (#{n}) lists exactly what to collect, and it's worth a read.")
     parts.append("Before you retry, `openclaw update status --json` shows the unredacted failing step on your machine. That's the line that tells you which of the above applies.")
     return "\n\n".join(parts) + FOOTER, code, v, rb
 
@@ -49,10 +53,11 @@ def main():
     since = (dt.date.today() - dt.timedelta(days=7)).isoformat()
     res = get("search/issues", {"q": f'repo:openclaw/openclaw is:issue is:open "Update failure:" in:title created:>={since}', "per_page": 100, "sort": "created"})
     out = []
+    maint = maintainer_replies()
     for it in res["items"]:
         if not re.match(r"Update failure: (\S+) \((\S+)\)", it["title"]):
             continue
-        text, code, v, rb = draft(it)
+        text, code, v, rb = draft(it, maint)
         out.append({"number": it["number"], "url": it["html_url"], "user": it["user"]["login"], "code": code, "version": v,
                     "outcome": rb, "comments": it["comments"], "urgent": "not serving" in rb, "draft": text})
     out.sort(key=lambda x: (not x["urgent"], -x["number"]))
