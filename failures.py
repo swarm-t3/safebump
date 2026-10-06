@@ -52,6 +52,11 @@ GUIDE = {
         "Check the Gateway logs and the saved failure context under <code>logs/support/</code> in your state directory before retrying."),
 }
 
+HOP = ('<p class="rec"><b>Stuck on 2026.9.3 or 2026.9.4?</b> The OpenClaw maintainer\'s own recipe '
+       '(<a href="https://github.com/openclaw/openclaw/issues/165706">#165706</a>) is one manual hop to the current release, then a Doctor pass: '
+       '<code>npm install -g openclaw@2026.9.8 --allow-scripts=openclaw</code>, then <code>openclaw doctor --fix</code>, then <code>openclaw gateway restart</code>. '
+       'From 2026.9.8 onward, <code>openclaw update</code> handles the rest. On npm 11.15 or older, drop <code>--allow-scripts=openclaw</code>. Back up first with <code>openclaw backup create --verify</code>.</p>')
+
 
 def fetch():
     items = []
@@ -125,6 +130,7 @@ def main():
              .replace('href="./"', 'href="../"'))
         page = (h + f'<p><a href="../">SafeBump</a> / <a href="../failures.html">update failures</a> / {e(code)}</p>'
                 + f"<h1>OpenClaw update failure: <code>{e(code)}</code></h1>" + sec.replace("<details>", "<details open>")
+                + (HOP if any(v in ("2026.9.3", "2026.9.4") for v, _ in collections.Counter(x["v"] for x in groups[code]).most_common(3)) else "")
                 + '<p class="rec">Before you retry, <code>openclaw update status --json</code> shows the unredacted failing step on your machine, and <code>openclaw gateway status --deep</code> shows what is actually serving. A retry overwrites that history.</p>'
                 + offer.replace('href="pay.html"', 'href="../pay.html"').replace('href="https://github.com/swarm-t3/safebump/issues/new?template=rescue.yml"', 'href="https://github.com/swarm-t3/safebump/issues/new?template=rescue.yml&title=%5BRescue%5D+' + e(code) + '"')
                 + f'<p><a href="../failures.html">All reason codes</a> · <a href="../">Is it safe to update? Per-release verdicts</a></p>' + tail)
