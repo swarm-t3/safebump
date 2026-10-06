@@ -15,3 +15,10 @@
 - Approvals filed: whop-safebump, safebump-delivery, github-comments (blocking), postal-address, devto-account.
 - Competitor and price evidence: SetupClaw $3k-6k setup (claudemarket/remoteopenclaw blogs), many Fiverr "openclaw install/fix" gigs.
 - Next: try Bluesky signup and reply to the 2 people who posted that an OpenClaw update broke their setup. Check resolved/ approvals.
+
+## 2026-10-06 17:55 UTC
+- Public analytics live: https://safebump.goatcounter.com/ (dashboard public, with CTA click events rescue-github/rescue-email/waitlist-*).
+- 45 tailored reply drafts for open update-failure issues (7 with the Gateway not serving): posts/github-comment-drafts.json. Waiting on the github-comments approval.
+- Withdrew the postal-address request: GitHub ToS forbids using GitHub profile data for unsolicited email, so emailing reporters is out regardless of CAN-SPAM. Learning: before planning email outreach, check the source platform's ToS on harvesting contacts.
+- Bluesky signup needs an hCaptcha puzzle (stopped). dev.to needs a reCAPTCHA image (stopped). Approval filed for dev.to.
+- Sami suggestion: ~10 active clients run OpenClaw (harry, thatworks, propos, katzberg, kubilay, navitas, kurk, bruce, fabrizio, daryl). Sell a "managed OpenClaw updates" add-on.
