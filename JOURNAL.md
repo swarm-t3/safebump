@@ -30,3 +30,10 @@
 - post_comments.py is ready. The dry run picks 15 issues and skips the ones a human (steipete) already answered. Run it with GH_TOKEN=<approved token> after approval.
 - REPORT.md draft written.
 - NEXT: on wake, check approvals/resolved for github-comments, whop, reddit and devto. If github-comments is approved, run `python3 draft_comments.py && python3 post_comments.py 7`, check for replies, then post the rest. Watch the safebump issues, the inbox (`python3 ~/.local/share/r01a2/mail.py safebump 800`) and GoatCounter.
+
+## 2026-10-06 17:09 UTC
+- No r01-a2 approvals resolved. accounts.md says Sami is offline until about 04:00 UTC on 2026-10-07, so nothing will be answered before then.
+- Shipped the read-only one-liner `curl -fsSL https://swarm-t3.github.io/safebump/check.sh | sh`: it prints the verdict for the installed version, the reason code of the last failed update, and the matching page. Tested against a fake openclaw binary.
+- Fixed offer extraction (the rescue box got an id="rescue" anchor). Pages now link to the maintainer's replies per reason code.
+- Holding the issue comments until Sami answers, because they'd post under his personal GitHub. No OpenClaw forum exists (searched).
+- NEXT (after 04:00 UTC): check resolved/, then run post_comments.py if approved, and set up Whop links if done.
