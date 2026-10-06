@@ -1,0 +1,220 @@
+{
+ "generated_at": "2026-10-06 16:19 UTC",
+ "total": 702,
+ "last7": 112,
+ "first": "2026-09-01",
+ "platforms": [
+  [
+   "darwin/arm64",
+   284
+  ],
+  [
+   "linux/x64",
+   192
+  ],
+  [
+   "win32/x64",
+   162
+  ],
+  [
+   "darwin/x64",
+   37
+  ],
+  [
+   "linux/arm64",
+   24
+  ],
+  [
+   "android/arm64",
+   2
+  ],
+  [
+   "win32/arm64",
+   1
+  ]
+ ],
+ "per_day": [
+  [
+   "2026-09-01",
+   1
+  ],
+  [
+   "2026-09-08",
+   3
+  ],
+  [
+   "2026-09-09",
+   11
+  ],
+  [
+   "2026-09-10",
+   13
+  ],
+  [
+   "2026-09-11",
+   58
+  ],
+  [
+   "2026-09-12",
+   36
+  ],
+  [
+   "2026-09-13",
+   20
+  ],
+  [
+   "2026-09-14",
+   32
+  ],
+  [
+   "2026-09-15",
+   15
+  ],
+  [
+   "2026-09-16",
+   14
+  ],
+  [
+   "2026-09-17",
+   10
+  ],
+  [
+   "2026-09-18",
+   7
+  ],
+  [
+   "2026-09-19",
+   72
+  ],
+  [
+   "2026-09-20",
+   48
+  ],
+  [
+   "2026-09-21",
+   60
+  ],
+  [
+   "2026-09-22",
+   33
+  ],
+  [
+   "2026-09-23",
+   41
+  ],
+  [
+   "2026-09-24",
+   37
+  ],
+  [
+   "2026-09-25",
+   34
+  ],
+  [
+   "2026-09-26",
+   13
+  ],
+  [
+   "2026-09-27",
+   19
+  ],
+  [
+   "2026-09-28",
+   13
+  ],
+  [
+   "2026-09-29",
+   21
+  ],
+  [
+   "2026-09-30",
+   18
+  ],
+  [
+   "2026-10-01",
+   15
+  ],
+  [
+   "2026-10-02",
+   11
+  ],
+  [
+   "2026-10-03",
+   18
+  ],
+  [
+   "2026-10-04",
+   7
+  ],
+  [
+   "2026-10-05",
+   15
+  ],
+  [
+   "2026-10-06",
+   7
+  ]
+ ],
+ "codes": {
+  "runtime-verification-failed": 91,
+  "package-swap": 2,
+  "updater-runtime-retention": 3,
+  "global-install-failed": 136,
+  "gateway-recovery-verification": 20,
+  "verifying": 4,
+  "target-metadata-preflight": 4,
+  "unexpected-error": 59,
+  "managed-service-preflight": 32,
+  "plugin-target-unavailable": 67,
+  "managed-service-handoff-unavailable": 12,
+  "clean-check": 2,
+  "package-permissions": 2,
+  "reconcile:abandoned": 12,
+  "managed-service-update-handoff": 2,
+  "requested": 13,
+  "update-executor-settlement": 1,
+  "activating": 5,
+  "package-doctor": 1,
+  "candidate-doctor": 1,
+  "pnpm-staging-preflight": 1,
+  "global-install-foreign-destination": 9,
+  "doctor-failed": 48,
+  "database-schema-preflight": 22,
+  "candidate-state-snapshot": 1,
+  "validating": 5,
+  "not-git-install": 5,
+  "post-update-verification": 1,
+  "gateway-verification": 1,
+  "invalid-config": 7,
+  "global-install-permission-denied": 1,
+  "update": 1,
+  "global-install-swap": 1,
+  "finalize:doctor": 40,
+  "repairing": 22,
+  "not-recorded": 1,
+  "finalize-target-config-convergence": 1,
+  "target-native-unsupported": 1,
+  "finalize-plugins": 1,
+  "post-update-plugins": 23,
+  "finalize:targetConfigConvergence": 5,
+  "[redacted-command]": 3,
+  "restart-unhealthy": 1,
+  "finalize:plugins": 2,
+  "state-migrated-no-rollback": 3,
+  "post-update-failed": 4,
+  "managed-service-stop-failed": 1,
+  "fetch-failed": 3,
+  "readyz-unhealthy": 2,
+  "managed-service-handoff-already-running": 3,
+  "managed-service-handoff-unsafe-recovery": 3,
+  "checkout-failed": 1,
+  "plugin-errors": 1,
+  "update-executor-settlement-failed": 1,
+  "preflight-no-good-commit": 2,
+  "preflight-worktree-failed": 1,
+  "managed-service-handoff-cancelled": 1,
+  "node-runtime-preflight": 1,
+  "managed-service-handoff-failed": 2,
+  "dirty": 1
+ }
+}

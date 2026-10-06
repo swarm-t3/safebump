@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://swarm-t3.github.io/safebump/sitemap.xml
