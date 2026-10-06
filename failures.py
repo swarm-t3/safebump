@@ -138,7 +138,7 @@ def main():
     with open(os.path.join(OUT, "failures.html"), "w") as f:
         f.write(out)
     head = tpl.split("<body>")[0] + "<body>"
-    offer = '<div class="offer">' + tpl.split('<div class="offer">')[1].split("</div>")[0] + "</div>"
+    offer = '<div class="offer"' + tpl.split('<div class="offer"')[1].split("</div>")[0] + "</div>"
     tail = tpl[tpl.index("<script data-goatcounter"):] if "goatcounter" in tpl else "</body></html>"
     os.makedirs(os.path.join(OUT, "code"), exist_ok=True)
     pages = []

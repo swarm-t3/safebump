@@ -138,7 +138,7 @@ def version_pages(data):
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "template.html")) as f:
         tpl = f.read()
     head = tpl.split("<body>")[0] + "<body>"
-    offer = '<div class="offer">' + tpl.split('<div class="offer">')[1].split("</div>")[0] + "</div>"
+    offer = '<div class="offer"' + tpl.split('<div class="offer"')[1].split("</div>")[0] + "</div>"
     offer = offer.replace('href="pay.html"', 'href="../pay.html"')
     tail = tpl[tpl.index("<script data-goatcounter"):]
     os.makedirs(os.path.join(OUT, "v"), exist_ok=True)

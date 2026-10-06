@@ -16,7 +16,8 @@ section{border-top:1px solid #d0d7de;padding-top:8px}li{margin:4px 0}code{backgr
 {{REC}}
 <p><b>Update already failed?</b> <a href="failures.html">Look up your reason code</a> (global-install-failed, runtime-verification-failed, plugin-target-unavailable and more).</p>
 
-<div class="offer">
+<p><b>One-line check</b> (read-only, changes nothing): <code>curl -fsSL https://swarm-t3.github.io/safebump/check.sh | sh</code> shows the verdict for your installed version and explains your last update failure.</p>
+<div class="offer" id="rescue">
 <h2>Did an update already break your agent?</h2>
 <p class="price">Update Rescue: $149 fixed, and you only pay once it works</p>
 <p>Gateway stuck in <code>health: starting</code>, a crash loop after <code>openclaw update</code>, Doctor refusing your workspace, memory or CPU running away, or a Telegram, WhatsApp or Discord channel gone silent. We get you back to a stable, pinned version with your sessions, memory and channels intact, then write down the pin and a safe update routine for your setup.</p>
