@@ -32,14 +32,14 @@ GUIDE = {
         "The Doctor maintenance step found something it couldn't fix during the update.",
         "Run <code>openclaw doctor</code> on the Gateway host, resolve what it reports, then retry. Don't delete lock files to force it through."),
     "finalize:doctor": (
-        "The update landed, but Doctor couldn't enter maintenance at the end, usually because a running Gateway still owns the state directory.",
+        "The new version installed, but the post-update Doctor pass failed, or couldn't enter maintenance because a running Gateway still owns the state directory. To find which check failed, run <code>openclaw doctor --non-interactive</code> and look at the update log in <code>~/.openclaw/logs/</code> around <code>finalize:doctor</code>.",
         "Resolve the ownership problem it names, then run <code>openclaw update repair</code>. Check <code>openclaw update status --json</code> and <code>openclaw gateway status --deep</code> for pending migrations. Never delete lock files."),
     "managed-service-preflight": (
         "The updater refused before swapping packages because a check on the managed Gateway service failed.",
         "<b>2026.9.4 updaters</b> can refuse here before the target code ever runs. The fix is to use the "
         f"<a href=\"{MANUAL}\">manual procedure</a> with the same package manager and prefix. On macOS, if <code>/update</code> or <code>update.run</code> failed with \"running inside the gateway process tree\", run <code>openclaw update</code> once from a separate Terminal."),
     "database-schema-preflight": (
-        "The updater refused because a database or config schema check failed before staging.",
+        "The updater refused because a database or config schema check failed before staging. One case where refusing is correct: the state was already written by a <i>newer</i> build (a nightly, a main checkout, or a downgrade). Then the supported path is to run a build at least as new as the one that last wrote the database.",
         "Before you retry (a retry overwrites the history), run <code>openclaw update status --json</code> and read <code>lastRun.origin.nextAction</code>. Fix the configuration it names first, because a newer release can't repair an updater that refuses before staging."),
     "post-update-plugins": (
         "The core update succeeded, but plugin maintenance afterwards reported a problem.",
@@ -70,8 +70,25 @@ def fetch():
     return items
 
 
+def maintainer_replies():
+    """Issue numbers by reason code where the OpenClaw maintainer replied, newest first."""
+    out = collections.defaultdict(list)
+    for page in (1, 2, 3):
+        res = get("search/issues", {"q": f'repo:{REPO} is:issue "Update failure:" in:title commenter:steipete',
+                                    "per_page": 100, "page": page, "sort": "updated"})
+        for it in res["items"]:
+            m = re.match(r"Update failure: ([a-z][^\s(]*) \((\S+)\)", it["title"])
+            if m:
+                out[m.group(1)].append((it["number"], it["html_url"]))
+        time.sleep(2.2)
+        if len(res["items"]) < 100:
+            break
+    return out
+
+
 def main():
     items = fetch()
+    maint = maintainer_replies()
     groups = collections.defaultdict(list)
     per_day = collections.Counter()
     plat = collections.Counter()
@@ -104,7 +121,9 @@ def main():
                          f'{" (" + e(x["reason"]) + ")" if x["state"] == "closed" and x["reason"] else ""}</li>' for x in g[:6])
         secs.append(f'<section id="{e(code)}"><h3><code>{e(code)}</code>: {len(g)} reports, {open_n} still open</h3>'
                     f'<p><b>What it means:</b> {what}</p><p><b>What to do:</b> {do}</p>'
-                    f'<details><summary>Latest reports</summary><ul>{recent}</ul></details></section>')
+                    + (f'<p><b>The OpenClaw maintainer answered similar reports:</b> ' + ", ".join(f'<a href="{e(u)}">#{n}</a>' for n, u in maint[code][:4])
+                       + '. These replies usually list exactly what to collect and the known fix for your version.</p>' if maint.get(code) else "")
+                    + f'<details><summary>Latest reports</summary><ul>{recent}</ul></details></section>')
     data = {"generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"), "total": total,
             "last7": last7, "first": min(per_day) if per_day else None, "platforms": plat.most_common(),
             "per_day": sorted(per_day.items()), "codes": {k: len(v) for k, v in groups.items()}}
