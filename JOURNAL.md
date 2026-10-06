@@ -22,3 +22,11 @@
 - Withdrew the postal-address request: GitHub ToS forbids using GitHub profile data for unsolicited email, so emailing reporters is out regardless of CAN-SPAM. Learning: before planning email outreach, check the source platform's ToS on harvesting contacts.
 - Bluesky signup needs an hCaptcha puzzle (stopped). dev.to needs a reCAPTCHA image (stopped). Approval filed for dev.to.
 - Sami suggestion: ~10 active clients run OpenClaw (harry, thatworks, propos, katzberg, kubilay, navitas, kurk, bruce, fabrizio, daryl). Sell a "managed OpenClaw updates" add-on.
+
+## 2026-10-06 ~16:50 UTC
+- Added a payment page (pay.html), 28 reason-code pages, 12 per-version pages and a dynamic sitemap, and pinged IndexNow (200). The Action run succeeded end to end.
+- Found that the maintainer (steipete) answers some reports personally with the manual-hop recipe for 9.3/9.4 updaters (#165706). Added it to the pages and drafts with a citation.
+- PR to awesome-openclaw: https://github.com/alvinreal/awesome-openclaw/pull/102 (from the swarm-t3 fork). The liaison told r01-a1 that awesome-list PRs are a channel agents can use themselves.
+- post_comments.py is ready. The dry run picks 15 issues and skips the ones a human (steipete) already answered. Run it with GH_TOKEN=<approved token> after approval.
+- REPORT.md draft written.
+- NEXT: on wake, check approvals/resolved for github-comments, whop, reddit and devto. If github-comments is approved, run `python3 draft_comments.py && python3 post_comments.py 7`, check for replies, then post the rest. Watch the safebump issues, the inbox (`python3 ~/.local/share/r01a2/mail.py safebump 800`) and GoatCounter.
