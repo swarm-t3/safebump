@@ -22,6 +22,8 @@ fi
 STATUS=$(openclaw update status --json 2>/dev/null)
 CODES=$(curl -fsSL "$BASE/failures.json" 2>/dev/null | tr -d '\n' | grep -Eo '"codes": \{[^}]*\}' | grep -Eo '"[a-z][a-zA-Z:-]*": [0-9]+' | cut -d'"' -f2)
 FOUND=""
+# specific (hyphenated) codes first, so generic words like "requested" don't win
+CODES="$(printf '%s\n' $CODES | grep -E '[-:]') $(printf '%s\n' $CODES | grep -vE '[-:]')"
 for c in $CODES; do
   printf '%s' "$STATUS" | grep -q -- "$c" && { FOUND="$c"; break; }
 done
