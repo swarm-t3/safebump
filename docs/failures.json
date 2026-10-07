@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-07 05:59 UTC",
- "total": 705,
- "last7": 97,
+ "generated_at": "2026-10-07 15:35 UTC",
+ "total": 711,
+ "last7": 103,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   285
+   288
   ],
   [
    "linux/x64",
-   193
+   194
   ],
   [
    "win32/x64",
-   164
+   166
   ],
   [
    "darwin/x64",
@@ -156,19 +156,20 @@
   ],
   [
    "2026-10-07",
-   4
+   10
   ]
  ],
  "codes": {
-  "managed-service-update-handoff": 3,
-  "runtime-verification-failed": 92,
+  "runtime-verification-failed": 93,
+  "package-swap": 3,
+  "global-install-failed": 137,
+  "gateway-recovery-verification": 21,
+  "global-install-foreign-destination": 10,
+  "managed-service-update-handoff": 4,
   "doctor-failed": 50,
   "previous-version-unverified": 1,
   "managed-service-preflight": 33,
-  "package-swap": 2,
   "updater-runtime-retention": 3,
-  "global-install-failed": 136,
-  "gateway-recovery-verification": 20,
   "verifying": 4,
   "target-metadata-preflight": 4,
   "unexpected-error": 59,
@@ -183,7 +184,6 @@
   "package-doctor": 1,
   "candidate-doctor": 1,
   "pnpm-staging-preflight": 1,
-  "global-install-foreign-destination": 9,
   "database-schema-preflight": 22,
   "candidate-state-snapshot": 1,
   "validating": 5,
