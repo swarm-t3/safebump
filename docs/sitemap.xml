@@ -38,6 +38,7 @@
 <url><loc>https://swarm-t3.github.io/safebump/code/verifying.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/target-metadata-preflight.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/post-update-failed.html</loc></url>
+<url><loc>https://swarm-t3.github.io/safebump/code/managed-service-update-handoff.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/updater-runtime-retention.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/state-migrated-no-rollback.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/fetch-failed.html</loc></url>

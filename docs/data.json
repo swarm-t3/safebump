@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06 20:59 UTC",
+ "generated_at": "2026-10-07 05:59 UTC",
  "repo": "openclaw/openclaw",
  "window_days": 14,
  "recommended": null,
@@ -12,21 +12,21 @@
    "published": "2026-10-05",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1",
-   "age_hours": 25,
-   "issues_total": 14,
-   "issues_open": 9,
+   "age_hours": 34,
+   "issues_total": 17,
+   "issues_open": 10,
    "open_p0": 1,
    "open_severe": 1,
    "verdict": "too-new",
-   "why": "Released 25h ago. Most regressions are reported in the first 72h. Wait.",
+   "why": "Released 34h ago. Most regressions are reported in the first 72h. Wait.",
    "top": [
     {
-     "number": 165850,
-     "title": "Doctor --fix stops on every pass: session SQLite import rejects legacy sessions.json entries with flat pendingFinalDelivery state (2026.10.1-beta.1)",
-     "url": "https://github.com/openclaw/openclaw/issues/165850",
+     "number": 166404,
+     "title": "[Bug]: 2026.10.1-beta.1 removed plugin-sdk exports, breaking @tencent-weixin/openclaw-weixin",
+     "url": "https://github.com/openclaw/openclaw/issues/166404",
      "state": "open",
-     "comments": 2,
-     "created": "2026-10-05",
+     "comments": 1,
+     "created": "2026-10-07",
      "prio": "P0",
      "severe": [
       "P0",
@@ -35,15 +35,15 @@
      "reactions": 1
     },
     {
-     "number": 165807,
-     "title": "[Bug]: Managed update environment overrides explicit CLI TMPDIR with service default",
-     "url": "https://github.com/openclaw/openclaw/issues/165807",
+     "number": 166446,
+     "title": "issue(context-engine): transcript admission guard aborts ordinary turns and native child settlement before inference",
+     "url": "https://github.com/openclaw/openclaw/issues/166446",
      "state": "open",
      "comments": 3,
-     "created": "2026-10-05",
-     "prio": "P2",
+     "created": "2026-10-07",
+     "prio": "P1",
      "severe": [],
-     "reactions": 1
+     "reactions": 0
     },
     {
      "number": 165822,
@@ -101,13 +101,13 @@
      "reactions": 1
     },
     {
-     "number": 165954,
-     "title": "[Bug]: claude-cli history boundary never stored after /new on long sessions, and decays to unknown after message-tool sends",
-     "url": "https://github.com/openclaw/openclaw/issues/165954",
+     "number": 166318,
+     "title": "Bug: Android browser file picker greys out STL attachments in Control UI",
+     "url": "https://github.com/openclaw/openclaw/issues/166318",
      "state": "open",
      "comments": 1,
      "created": "2026-10-06",
-     "prio": "P1",
+     "prio": "P2",
      "severe": [],
      "reactions": 1
     }
@@ -120,13 +120,13 @@
    "published": "2026-10-03",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
-   "age_hours": 89,
+   "age_hours": 98,
    "issues_total": 300,
-   "issues_open": 178,
-   "open_p0": 30,
-   "open_severe": 41,
+   "issues_open": 175,
+   "open_p0": 28,
+   "open_severe": 39,
    "verdict": "hold",
-   "why": "30 open P0 and 41 open crash/blocker issues reported against it.",
+   "why": "28 open P0 and 39 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164074,
@@ -173,6 +173,21 @@
      "reactions": 1
     },
     {
+     "number": 165789,
+     "title": "2026.9.2 \u2192 2026.9.8 upgrade field report (macOS): egress-proxy certs fail strict TLS, doctor --fix infinite loop, NO_PROXY blocked, upgrade-path breakage",
+     "url": "https://github.com/openclaw/openclaw/issues/165789",
+     "state": "open",
+     "comments": 4,
+     "created": "2026-10-05",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:crash-loop",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 164986,
      "title": "[Bug]: 2026.9.8 update repair fails at finalize:plugins after Doctor offline maintenance",
      "url": "https://github.com/openclaw/openclaw/issues/164986",
@@ -202,44 +217,30 @@
      "reactions": 1
     },
     {
-     "number": 164731,
-     "title": "[Bug]: doctor --fix fails: legacy-cron-run-logs migration queries task_runs.detail_json which doesn't exist in pre-2026.9.8 state DBs",
-     "url": "https://github.com/openclaw/openclaw/issues/164731",
-     "state": "open",
-     "comments": 3,
-     "created": "2026-10-04",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 164695,
-     "title": "[Bug]: macOS Desktop update hangs after package publication during post-core settlement",
-     "url": "https://github.com/openclaw/openclaw/issues/164695",
-     "state": "open",
-     "comments": 2,
-     "created": "2026-10-04",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
      "number": 166004,
      "title": "Windows: scheduled-task Gateway service won't start (readiness timeout / state-dir ownership); 2026.9.8 update rolls back with doctor-failed",
      "url": "https://github.com/openclaw/openclaw/issues/166004",
      "state": "open",
-     "comments": 2,
+     "comments": 3,
      "created": "2026-10-06",
      "prio": "P0",
      "severe": [
       "P0",
       "impact:crash-loop",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 166455,
+     "title": "Update failure: doctor-failed (2026.9.5)",
+     "url": "https://github.com/openclaw/openclaw/issues/166455",
+     "state": "open",
+     "comments": 3,
+     "created": "2026-10-07",
+     "prio": "P0",
+     "severe": [
+      "P0",
       "impact:ux-release-blocker"
      ],
      "reactions": 1
@@ -253,7 +254,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
-   "age_hours": 102,
+   "age_hours": 111,
    "issues_total": 7,
    "issues_open": 5,
    "open_p0": 0,
@@ -325,7 +326,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
-   "age_hours": 116,
+   "age_hours": 125,
    "issues_total": 0,
    "issues_open": 0,
    "open_p0": 0,
@@ -341,13 +342,13 @@
    "published": "2026-09-30",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
-   "age_hours": 160,
+   "age_hours": 169,
    "issues_total": 300,
-   "issues_open": 174,
-   "open_p0": 42,
-   "open_severe": 51,
+   "issues_open": 168,
+   "open_p0": 41,
+   "open_severe": 50,
    "verdict": "hold",
-   "why": "42 open P0 and 51 open crash/blocker issues reported against it.",
+   "why": "41 open P0 and 50 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164074,
@@ -421,6 +422,35 @@
      "reactions": 1
     },
     {
+     "number": 162585,
+     "title": "[2026.9.7][Windows] Plugin source-capture staging re-materializes the plugin's own package into package-0/node_modules/<self> and never converges; large npm trees explode linearly (290 MB -> 612 MB+/24 min) so the gateway never turns healthy",
+     "url": "https://github.com/openclaw/openclaw/issues/162585",
+     "state": "open",
+     "comments": 4,
+     "created": "2026-10-01",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:crash-loop"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 162211,
+     "title": "Startup blocks the Gateway event loop for 40\u2013200s; health monitor misreads the stall as a disconnect and escalates into a restart loop",
+     "url": "https://github.com/openclaw/openclaw/issues/162211",
+     "state": "open",
+     "comments": 4,
+     "created": "2026-09-30",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:crash-loop",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 161865,
      "title": "[Bug]: pnpm self-update launches SQLite worker from removed old generation after stopping Gateway",
      "url": "https://github.com/openclaw/openclaw/issues/161865",
@@ -434,35 +464,6 @@
       "impact:ux-release-blocker"
      ],
      "reactions": 1
-    },
-    {
-     "number": 162193,
-     "title": "[Bug]: doctor --fix truncates existing shared-state SQLite DB and then aborts with Existing shared-state database generation changed",
-     "url": "https://github.com/openclaw/openclaw/issues/162193",
-     "state": "open",
-     "comments": 3,
-     "created": "2026-09-30",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:data-loss",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 2
-    },
-    {
-     "number": 164986,
-     "title": "[Bug]: 2026.9.8 update repair fails at finalize:plugins after Doctor offline maintenance",
-     "url": "https://github.com/openclaw/openclaw/issues/164986",
-     "state": "open",
-     "comments": 3,
-     "created": "2026-10-04",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
     }
    ]
   },
@@ -473,7 +474,7 @@
    "published": "2026-09-29",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
-   "age_hours": 185,
+   "age_hours": 194,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 1,
@@ -548,9 +549,9 @@
    "published": "2026-09-23",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
-   "age_hours": 309,
+   "age_hours": 318,
    "issues_total": 300,
-   "issues_open": 205,
+   "issues_open": 204,
    "open_p0": 64,
    "open_severe": 80,
    "verdict": "hold",
@@ -561,7 +562,7 @@
      "title": "prepared-model-catalog.worker.js: unbounded memory leak, ~4-5 GB/h, provider-agnostic (reproduced on cold reboot + provider bisect)",
      "url": "https://github.com/openclaw/openclaw/issues/159662",
      "state": "open",
-     "comments": 18,
+     "comments": 20,
      "created": "2026-09-27",
      "prio": "P0",
      "severe": [
@@ -641,6 +642,20 @@
      "reactions": 1
     },
     {
+     "number": 160386,
+     "title": "[Bug]: 2026.9.6 on large session stores causes severe SQLite I/O pressure, WebUI RPC timeouts, and STATE_DATABASE_READ_ADMISSION_INVALIDATED",
+     "url": "https://github.com/openclaw/openclaw/issues/160386",
+     "state": "open",
+     "comments": 11,
+     "created": "2026-09-28",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 160548,
      "title": "[Bug]: 2026.9.6 prepared-model-catalog worker leaks ~1 GiB per 5 min; each memory reclamation supersedes the runtime publication and kills every waiting turn",
      "url": "https://github.com/openclaw/openclaw/issues/160548",
@@ -653,20 +668,6 @@
       "impact:crash-loop"
      ],
      "reactions": 1
-    },
-    {
-     "number": 160386,
-     "title": "[Bug]: 2026.9.6 on large session stores causes severe SQLite I/O pressure, WebUI RPC timeouts, and STATE_DATABASE_READ_ADMISSION_INVALIDATED",
-     "url": "https://github.com/openclaw/openclaw/issues/160386",
-     "state": "open",
-     "comments": 10,
-     "created": "2026-09-28",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
     }
    ]
   },
@@ -677,13 +678,13 @@
    "published": "2026-09-21",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
-   "age_hours": 367,
+   "age_hours": 376,
    "issues_total": 19,
-   "issues_open": 10,
-   "open_p0": 3,
-   "open_severe": 3,
+   "issues_open": 9,
+   "open_p0": 2,
+   "open_severe": 2,
    "verdict": "hold",
-   "why": "3 open P0 and 3 open crash/blocker issues reported against it.",
+   "why": "2 open P0 and 2 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 160959,
@@ -710,20 +711,6 @@
      "severe": [
       "P0",
       "impact:crash-loop",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 165850,
-     "title": "Doctor --fix stops on every pass: session SQLite import rejects legacy sessions.json entries with flat pendingFinalDelivery state (2026.10.1-beta.1)",
-     "url": "https://github.com/openclaw/openclaw/issues/165850",
-     "state": "open",
-     "comments": 2,
-     "created": "2026-10-05",
-     "prio": "P0",
-     "severe": [
-      "P0",
       "impact:ux-release-blocker"
      ],
      "reactions": 1
@@ -782,6 +769,17 @@
      "prio": "P2",
      "severe": [],
      "reactions": 1
+    },
+    {
+     "number": 165270,
+     "title": "[Bug]: xAI OAuth refresh exceeds 120000 ms hard timeout although endpoints respond in ~100 ms; 1 ms expiry sentinel forces refresh on every use",
+     "url": "https://github.com/openclaw/openclaw/issues/165270",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-05",
+     "prio": "P2",
+     "severe": [],
+     "reactions": 1
     }
    ]
   },
@@ -792,13 +790,13 @@
    "published": "2026-09-19",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
-   "age_hours": 427,
+   "age_hours": 436,
    "issues_total": 300,
-   "issues_open": 161,
-   "open_p0": 77,
-   "open_severe": 86,
+   "issues_open": 159,
+   "open_p0": 74,
+   "open_severe": 84,
    "verdict": "hold",
-   "why": "77 open P0 and 86 open crash/blocker issues reported against it.",
+   "why": "74 open P0 and 84 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 153257,
@@ -821,7 +819,7 @@
      "title": "[Bug]: Gateway startup hangs for ~17 minutes at sidecars.model-runtime and finally fails with prepared model runtime publication (workspace plugins; agent) timed out",
      "url": "https://github.com/openclaw/openclaw/issues/152981",
      "state": "open",
-     "comments": 17,
+     "comments": 18,
      "created": "2026-09-19",
      "prio": "P0",
      "severe": [
@@ -904,16 +902,16 @@
      "reactions": 1
     },
     {
-     "number": 154114,
-     "title": "openclaw update: candidate rehearsal fails with 'No usable, authenticated, tool-capable inference route' despite live Gateway having working model auth",
-     "url": "https://github.com/openclaw/openclaw/issues/154114",
+     "number": 156674,
+     "title": "[Bug]: 2026.9.5 macOS gateway resource pressure with long-lived Codex workers; stopping gateway restores system responsiveness",
+     "url": "https://github.com/openclaw/openclaw/issues/156674",
      "state": "open",
      "comments": 10,
-     "created": "2026-09-20",
+     "created": "2026-09-23",
      "prio": "P0",
      "severe": [
       "P0",
-      "impact:ux-release-blocker"
+      "impact:crash-loop"
      ],
      "reactions": 1
     }
@@ -926,13 +924,13 @@
    "published": "2026-09-11",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
-   "age_hours": 617,
+   "age_hours": 626,
    "issues_total": 300,
-   "issues_open": 168,
-   "open_p0": 68,
-   "open_severe": 74,
+   "issues_open": 162,
+   "open_p0": 60,
+   "open_severe": 66,
    "verdict": "hold",
-   "why": "68 open P0 and 74 open crash/blocker issues reported against it.",
+   "why": "60 open P0 and 66 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 149538,
@@ -953,7 +951,7 @@
      "title": "[Bug]: Gateway startup hangs for ~17 minutes at sidecars.model-runtime and finally fails with prepared model runtime publication (workspace plugins; agent) timed out",
      "url": "https://github.com/openclaw/openclaw/issues/152981",
      "state": "open",
-     "comments": 17,
+     "comments": 18,
      "created": "2026-09-19",
      "prio": "P0",
      "severe": [
@@ -1022,12 +1020,12 @@
      "reactions": 1
     },
     {
-     "number": 154114,
-     "title": "openclaw update: candidate rehearsal fails with 'No usable, authenticated, tool-capable inference route' despite live Gateway having working model auth",
-     "url": "https://github.com/openclaw/openclaw/issues/154114",
+     "number": 148307,
+     "title": "Error: database is locked on agent DB when session reclamation exceeds the 5s busy timeout (464 MB DB, 33 sessions, zero freelist)",
+     "url": "https://github.com/openclaw/openclaw/issues/148307",
      "state": "open",
      "comments": 10,
-     "created": "2026-09-20",
+     "created": "2026-09-14",
      "prio": "P0",
      "severe": [
       "P0",
@@ -1058,7 +1056,7 @@
    "published": "2026-09-10",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.35",
-   "age_hours": 638,
+   "age_hours": 647,
    "issues_total": 8,
    "issues_open": 4,
    "open_p0": 0,
@@ -1119,13 +1117,13 @@
    "published": "2026-09-08",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.3",
-   "age_hours": 678,
+   "age_hours": 687,
    "issues_total": 300,
    "issues_open": 182,
-   "open_p0": 93,
-   "open_severe": 99,
+   "open_p0": 92,
+   "open_severe": 98,
    "verdict": "hold",
-   "why": "93 open P0 and 99 open crash/blocker issues reported against it.",
+   "why": "92 open P0 and 98 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 143524,
