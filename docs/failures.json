@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-07 15:35 UTC",
- "total": 711,
- "last7": 103,
+ "generated_at": "2026-10-07 21:20 UTC",
+ "total": 714,
+ "last7": 106,
  "first": "2026-09-01",
  "platforms": [
   [
@@ -10,7 +10,7 @@
   ],
   [
    "linux/x64",
-   194
+   196
   ],
   [
    "win32/x64",
@@ -18,7 +18,7 @@
   ],
   [
    "darwin/x64",
-   36
+   37
   ],
   [
    "linux/arm64",
@@ -156,19 +156,19 @@
   ],
   [
    "2026-10-07",
-   10
+   13
   ]
  ],
  "codes": {
+  "managed-service-preflight": 34,
+  "global-install-failed": 139,
   "runtime-verification-failed": 93,
   "package-swap": 3,
-  "global-install-failed": 137,
   "gateway-recovery-verification": 21,
   "global-install-foreign-destination": 10,
   "managed-service-update-handoff": 4,
   "doctor-failed": 50,
   "previous-version-unverified": 1,
-  "managed-service-preflight": 33,
   "updater-runtime-retention": 3,
   "verifying": 4,
   "target-metadata-preflight": 4,
