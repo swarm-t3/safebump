@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08 15:37 UTC",
+ "generated_at": "2026-10-08 21:20 UTC",
  "repo": "openclaw/openclaw",
  "window_days": 14,
  "recommended": null,
@@ -12,18 +12,18 @@
    "published": "2026-10-08",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9",
-   "age_hours": 5,
-   "issues_total": 13,
-   "issues_open": 10,
-   "open_p0": 8,
-   "open_severe": 8,
+   "age_hours": 10,
+   "issues_total": 37,
+   "issues_open": 18,
+   "open_p0": 10,
+   "open_severe": 11,
    "verdict": "too-new",
-   "why": "Released 5h ago. Most regressions are reported in the first 72h. Wait.",
+   "why": "Released 10h ago. Most regressions are reported in the first 72h. Wait.",
    "top": [
     {
-     "number": 167181,
-     "title": "Update failure: package-swap (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167181",
+     "number": 167376,
+     "title": "Update 2026.9.8\u21922026.9.9 fails twice at package-swap: recovery permissions are unsafe",
+     "url": "https://github.com/openclaw/openclaw/issues/167376",
      "state": "open",
      "comments": 4,
      "created": "2026-10-08",
@@ -35,11 +35,11 @@
      "reactions": 1
     },
     {
-     "number": 167233,
-     "title": "Update failure: managed-service-update-handoff (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167233",
+     "number": 167343,
+     "title": "Update failure: gateway-recovery-verification (2026.9.9)",
+     "url": "https://github.com/openclaw/openclaw/issues/167343",
      "state": "open",
-     "comments": 1,
+     "comments": 2,
      "created": "2026-10-08",
      "prio": "P0",
      "severe": [
@@ -49,37 +49,23 @@
      "reactions": 1
     },
     {
-     "number": 167249,
-     "title": "Update failure: requested (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167249",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-10-08",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 167262,
-     "title": "Update failure: runtime-verification-failed (2026.9.5)",
-     "url": "https://github.com/openclaw/openclaw/issues/167262",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-10-08",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 167208,
+     "number": 167405,
      "title": "Update failure: package-swap (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167208",
+     "url": "https://github.com/openclaw/openclaw/issues/167405",
+     "state": "open",
+     "comments": 2,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167385,
+     "title": "[Bug]: hand-deleted sessions-delete archive (.jsonl.deleted.*.zst) permanently blocks plugin session repair, codex data upgrade and update verification",
+     "url": "https://github.com/openclaw/openclaw/issues/167385",
      "state": "open",
      "comments": 1,
      "created": "2026-10-08",
@@ -91,9 +77,9 @@
      "reactions": 1
     },
     {
-     "number": 167206,
-     "title": "Update failure: post-update-verification (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167206",
+     "number": 167413,
+     "title": "Update failure: candidate-doctor (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167413",
      "state": "open",
      "comments": 1,
      "created": "2026-10-08",
@@ -105,23 +91,37 @@
      "reactions": 1
     },
     {
-     "number": 167297,
+     "number": 167419,
+     "title": "Update failure: package-doctor (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167419",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167428,
+     "title": "2026.9.9 update blocked: acp-session-metadata refuses on a stale deferred-plugin session import record bound to a different DB; supported recovery cannot repair or replace it",
+     "url": "https://github.com/openclaw/openclaw/issues/167428",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167430,
      "title": "Update failure: package-swap (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167297",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-10-08",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 167247,
-     "title": "Update failure: package-swap (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167247",
+     "url": "https://github.com/openclaw/openclaw/issues/167430",
      "state": "open",
      "comments": 1,
      "created": "2026-10-08",
@@ -141,13 +141,13 @@
    "published": "2026-10-08",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2",
-   "age_hours": 14,
-   "issues_total": 4,
+   "age_hours": 20,
+   "issues_total": 5,
    "issues_open": 2,
    "open_p0": 0,
    "open_severe": 1,
    "verdict": "too-new",
-   "why": "Released 14h ago. Most regressions are reported in the first 72h. Wait.",
+   "why": "Released 20h ago. Most regressions are reported in the first 72h. Wait.",
    "top": [
     {
      "number": 167005,
@@ -182,8 +182,8 @@
    "published": "2026-10-05",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1",
-   "age_hours": 67,
-   "issues_total": 29,
+   "age_hours": 73,
+   "issues_total": 30,
    "issues_open": 17,
    "open_p0": 3,
    "open_severe": 5,
@@ -237,7 +237,7 @@
      "title": "[Bug]: Gateway full-process restart every ~40 min on update activation, with a 4-day-expired gateway_restart_handoff row as the only recorded reason",
      "url": "https://github.com/openclaw/openclaw/issues/167172",
      "state": "open",
-     "comments": 1,
+     "comments": 2,
      "created": "2026-10-08",
      "prio": "P1",
      "severe": [
@@ -300,20 +300,20 @@
    "published": "2026-10-03",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
-   "age_hours": 132,
+   "age_hours": 137,
    "issues_total": 300,
-   "issues_open": 195,
-   "open_p0": 43,
-   "open_severe": 56,
+   "issues_open": 182,
+   "open_p0": 42,
+   "open_severe": 55,
    "verdict": "hold",
-   "why": "43 open P0 and 56 open crash/blocker issues reported against it.",
+   "why": "42 open P0 and 55 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164074,
      "title": "Native update recovery stuck at publication-complete when retained previous package fingerprint changes",
      "url": "https://github.com/openclaw/openclaw/issues/164074",
      "state": "open",
-     "comments": 11,
+     "comments": 12,
      "created": "2026-10-03",
      "prio": "P0",
      "severe": [
@@ -368,20 +368,6 @@
      "reactions": 1
     },
     {
-     "number": 167181,
-     "title": "Update failure: package-swap (2026.9.8)",
-     "url": "https://github.com/openclaw/openclaw/issues/167181",
-     "state": "open",
-     "comments": 4,
-     "created": "2026-10-08",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
      "number": 166004,
      "title": "Windows: scheduled-task Gateway service won't start (readiness timeout / state-dir ownership); 2026.9.8 update rolls back with doctor-failed",
      "url": "https://github.com/openclaw/openclaw/issues/166004",
@@ -392,6 +378,20 @@
      "severe": [
       "P0",
       "impact:crash-loop",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167376,
+     "title": "Update 2026.9.8\u21922026.9.9 fails twice at package-swap: recovery permissions are unsafe",
+     "url": "https://github.com/openclaw/openclaw/issues/167376",
+     "state": "open",
+     "comments": 4,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
       "impact:ux-release-blocker"
      ],
      "reactions": 1
@@ -434,7 +434,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
-   "age_hours": 145,
+   "age_hours": 151,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 0,
@@ -506,7 +506,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
-   "age_hours": 159,
+   "age_hours": 165,
    "issues_total": 0,
    "issues_open": 0,
    "open_p0": 0,
@@ -522,20 +522,20 @@
    "published": "2026-09-30",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
-   "age_hours": 202,
+   "age_hours": 208,
    "issues_total": 300,
-   "issues_open": 172,
-   "open_p0": 41,
-   "open_severe": 51,
+   "issues_open": 174,
+   "open_p0": 42,
+   "open_severe": 52,
    "verdict": "hold",
-   "why": "41 open P0 and 51 open crash/blocker issues reported against it.",
+   "why": "42 open P0 and 52 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164074,
      "title": "Native update recovery stuck at publication-complete when retained previous package fingerprint changes",
      "url": "https://github.com/openclaw/openclaw/issues/164074",
      "state": "open",
-     "comments": 11,
+     "comments": 12,
      "created": "2026-10-03",
      "prio": "P0",
      "severe": [
@@ -549,12 +549,26 @@
      "title": "Startup blocks the Gateway event loop for 40\u2013200s; health monitor misreads the stall as a disconnect and escalates into a restart loop",
      "url": "https://github.com/openclaw/openclaw/issues/162211",
      "state": "open",
-     "comments": 5,
+     "comments": 6,
      "created": "2026-09-30",
      "prio": "P0",
      "severe": [
       "P0",
       "impact:crash-loop",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 161921,
+     "title": "[Bug]: after state-migrated-no-rollback, doctor --fix and plugins update each require the other (plugins stuck on previous release)",
+     "url": "https://github.com/openclaw/openclaw/issues/161921",
+     "state": "open",
+     "comments": 5,
+     "created": "2026-09-30",
+     "prio": "P0",
+     "severe": [
+      "P0",
       "impact:ux-release-blocker"
      ],
      "reactions": 1
@@ -574,26 +588,26 @@
      "reactions": 1
     },
     {
+     "number": 163434,
+     "title": "age-based transcript trimming deletes the session header, and ensureTranscriptHeader cannot repair a partially trimmed transcript",
+     "url": "https://github.com/openclaw/openclaw/issues/163434",
+     "state": "open",
+     "comments": 5,
+     "created": "2026-10-02",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:data-loss"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 164174,
      "title": "Update failure: gateway-recovery-verification (2026.9.7)",
      "url": "https://github.com/openclaw/openclaw/issues/164174",
      "state": "open",
      "comments": 4,
      "created": "2026-10-03",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 161921,
-     "title": "[Bug]: after state-migrated-no-rollback, doctor --fix and plugins update each require the other (plugins stuck on previous release)",
-     "url": "https://github.com/openclaw/openclaw/issues/161921",
-     "state": "open",
-     "comments": 4,
-     "created": "2026-09-30",
      "prio": "P0",
      "severe": [
       "P0",
@@ -630,20 +644,6 @@
       "impact:ux-release-blocker"
      ],
      "reactions": 1
-    },
-    {
-     "number": 163434,
-     "title": "age-based transcript trimming deletes the session header, and ensureTranscriptHeader cannot repair a partially trimmed transcript",
-     "url": "https://github.com/openclaw/openclaw/issues/163434",
-     "state": "open",
-     "comments": 4,
-     "created": "2026-10-02",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:data-loss"
-     ],
-     "reactions": 1
     }
    ]
   },
@@ -654,7 +654,7 @@
    "published": "2026-09-29",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
-   "age_hours": 228,
+   "age_hours": 234,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 1,
@@ -729,7 +729,7 @@
    "published": "2026-09-23",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
-   "age_hours": 352,
+   "age_hours": 357,
    "issues_total": 300,
    "issues_open": 202,
    "open_p0": 62,
@@ -859,7 +859,7 @@
    "published": "2026-09-21",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
-   "age_hours": 410,
+   "age_hours": 416,
    "issues_total": 19,
    "issues_open": 9,
    "open_p0": 2,
@@ -872,7 +872,7 @@
      "title": "[Bug]: Gateway blocks for minutes while capturing large external plugins (2026.9.6 regression)",
      "url": "https://github.com/openclaw/openclaw/issues/160959",
      "state": "open",
-     "comments": 8,
+     "comments": 9,
      "created": "2026-09-29",
      "prio": "P0",
      "severe": [
@@ -971,13 +971,13 @@
    "published": "2026-09-19",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
-   "age_hours": 469,
+   "age_hours": 475,
    "issues_total": 300,
    "issues_open": 158,
-   "open_p0": 74,
+   "open_p0": 75,
    "open_severe": 84,
    "verdict": "hold",
-   "why": "74 open P0 and 84 open crash/blocker issues reported against it.",
+   "why": "75 open P0 and 84 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 153257,
@@ -1104,13 +1104,13 @@
    "published": "2026-09-11",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
-   "age_hours": 659,
+   "age_hours": 665,
    "issues_total": 300,
    "issues_open": 157,
-   "open_p0": 54,
+   "open_p0": 53,
    "open_severe": 60,
    "verdict": "hold",
-   "why": "54 open P0 and 60 open crash/blocker issues reported against it.",
+   "why": "53 open P0 and 60 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 149538,

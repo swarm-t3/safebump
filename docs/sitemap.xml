@@ -29,10 +29,10 @@
 <url><loc>https://swarm-t3.github.io/safebump/code/database-schema-preflight.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/repairing.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/requested.html</loc></url>
+<url><loc>https://swarm-t3.github.io/safebump/code/package-swap.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/managed-service-handoff-unavailable.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/reconcile-abandoned.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/global-install-foreign-destination.html</loc></url>
-<url><loc>https://swarm-t3.github.io/safebump/code/package-swap.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/invalid-config.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/managed-service-update-handoff.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/activating.html</loc></url>
@@ -42,6 +42,7 @@
 <url><loc>https://swarm-t3.github.io/safebump/code/verifying.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/target-metadata-preflight.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/post-update-failed.html</loc></url>
+<url><loc>https://swarm-t3.github.io/safebump/code/candidate-doctor.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/updater-runtime-retention.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/state-migrated-no-rollback.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/fetch-failed.html</loc></url>
