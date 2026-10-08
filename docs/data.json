@@ -1,10 +1,139 @@
 {
- "generated_at": "2026-10-08 06:03 UTC",
+ "generated_at": "2026-10-08 15:37 UTC",
  "repo": "openclaw/openclaw",
  "window_days": 14,
  "recommended": null,
  "recommended_extended": "2026.8.35",
  "versions": [
+  {
+   "version": "2026.9.9",
+   "line": "stable",
+   "tag": "v2026.9.9",
+   "published": "2026-10-08",
+   "prerelease": false,
+   "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9",
+   "age_hours": 5,
+   "issues_total": 13,
+   "issues_open": 10,
+   "open_p0": 8,
+   "open_severe": 8,
+   "verdict": "too-new",
+   "why": "Released 5h ago. Most regressions are reported in the first 72h. Wait.",
+   "top": [
+    {
+     "number": 167181,
+     "title": "Update failure: package-swap (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167181",
+     "state": "open",
+     "comments": 4,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167233,
+     "title": "Update failure: managed-service-update-handoff (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167233",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167249,
+     "title": "Update failure: requested (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167249",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167262,
+     "title": "Update failure: runtime-verification-failed (2026.9.5)",
+     "url": "https://github.com/openclaw/openclaw/issues/167262",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167208,
+     "title": "Update failure: package-swap (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167208",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167206,
+     "title": "Update failure: post-update-verification (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167206",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167297,
+     "title": "Update failure: package-swap (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167297",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167247,
+     "title": "Update failure: package-swap (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167247",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    }
+   ]
+  },
   {
    "version": "2026.10.1-beta.2",
    "line": "beta",
@@ -12,14 +141,27 @@
    "published": "2026-10-08",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2",
-   "age_hours": 5,
-   "issues_total": 2,
-   "issues_open": 1,
+   "age_hours": 14,
+   "issues_total": 4,
+   "issues_open": 2,
    "open_p0": 0,
-   "open_severe": 0,
+   "open_severe": 1,
    "verdict": "too-new",
-   "why": "Released 5h ago. Most regressions are reported in the first 72h. Wait.",
+   "why": "Released 14h ago. Most regressions are reported in the first 72h. Wait.",
    "top": [
+    {
+     "number": 167005,
+     "title": "[Bug]: Stale Codex reply ownership survives abort/recovery and blocks Telegram ingress and Gateway drain (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167005",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P1",
+     "severe": [
+      "impact:crash-loop"
+     ],
+     "reactions": 1
+    },
     {
      "number": 166871,
      "title": "Slack DM: message react with user:U\u2026 or channel:D\u2026 fails for the npm-installed official Slack plugin",
@@ -40,13 +182,13 @@
    "published": "2026-10-05",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1",
-   "age_hours": 58,
-   "issues_total": 25,
-   "issues_open": 15,
-   "open_p0": 2,
-   "open_severe": 2,
+   "age_hours": 67,
+   "issues_total": 29,
+   "issues_open": 17,
+   "open_p0": 3,
+   "open_severe": 5,
    "verdict": "hold",
-   "why": "2 open P0 and 2 open crash/blocker issues reported against it.",
+   "why": "3 open P0 and 5 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 166404,
@@ -67,11 +209,51 @@
      "title": "Gateway restart sometimes hangs 30+ minutes to 2 hours on Windows multi-agent installs (2026.9.8)",
      "url": "https://github.com/openclaw/openclaw/issues/166894",
      "state": "open",
-     "comments": 1,
+     "comments": 3,
      "created": "2026-10-08",
      "prio": "P0",
      "severe": [
       "P0",
+      "impact:crash-loop"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167072,
+     "title": "[Bug]: A Logged-out Tailscale node (NeedsLogin) makes tailscale serve fail, aborting Gateway startup and restart-looping the unit",
+     "url": "https://github.com/openclaw/openclaw/issues/167072",
+     "state": "open",
+     "comments": 2,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:crash-loop"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167172,
+     "title": "[Bug]: Gateway full-process restart every ~40 min on update activation, with a 4-day-expired gateway_restart_handoff row as the only recorded reason",
+     "url": "https://github.com/openclaw/openclaw/issues/167172",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P1",
+     "severe": [
+      "impact:crash-loop"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167005,
+     "title": "[Bug]: Stale Codex reply ownership survives abort/recovery and blocks Telegram ingress and Gateway drain (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167005",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-08",
+     "prio": "P1",
+     "severe": [
       "impact:crash-loop"
      ],
      "reactions": 1
@@ -99,17 +281,6 @@
      "reactions": 1
     },
     {
-     "number": 166076,
-     "title": "[Bug]: Tool-loop context-engine assemble ignores reserve and system prompt, so the mid-turn precheck trips",
-     "url": "https://github.com/openclaw/openclaw/issues/166076",
-     "state": "open",
-     "comments": 2,
-     "created": "2026-10-06",
-     "prio": "P1",
-     "severe": [],
-     "reactions": 1
-    },
-    {
      "number": 166752,
      "title": "[Bug]: claude-cli agents lose their shell on 2026.10.1 when the tool policy doesn't grant exec",
      "url": "https://github.com/openclaw/openclaw/issues/166752",
@@ -117,28 +288,6 @@
      "comments": 1,
      "created": "2026-10-07",
      "prio": "P1",
-     "severe": [],
-     "reactions": 1
-    },
-    {
-     "number": 166099,
-     "title": "[Bug]: Update waits ~11 minutes for previous Gateway with terminal plugin trust failure",
-     "url": "https://github.com/openclaw/openclaw/issues/166099",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-10-06",
-     "prio": "P2",
-     "severe": [],
-     "reactions": 1
-    },
-    {
-     "number": 166133,
-     "title": "[Bug]: MCP tool_call wrapper coerces integer args to string, breaks MCP tools with integer params",
-     "url": "https://github.com/openclaw/openclaw/issues/166133",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-10-06",
-     "prio": "P2",
      "severe": [],
      "reactions": 1
     }
@@ -151,13 +300,13 @@
    "published": "2026-10-03",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
-   "age_hours": 122,
+   "age_hours": 132,
    "issues_total": 300,
-   "issues_open": 197,
-   "open_p0": 36,
-   "open_severe": 51,
+   "issues_open": 195,
+   "open_p0": 43,
+   "open_severe": 56,
    "verdict": "hold",
-   "why": "36 open P0 and 51 open crash/blocker issues reported against it.",
+   "why": "43 open P0 and 56 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164074,
@@ -219,6 +368,20 @@
      "reactions": 1
     },
     {
+     "number": 167181,
+     "title": "Update failure: package-swap (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/167181",
+     "state": "open",
+     "comments": 4,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 166004,
      "title": "Windows: scheduled-task Gateway service won't start (readiness timeout / state-dir ownership); 2026.9.8 update rolls back with doctor-failed",
      "url": "https://github.com/openclaw/openclaw/issues/166004",
@@ -261,20 +424,6 @@
       "impact:ux-release-blocker"
      ],
      "reactions": 1
-    },
-    {
-     "number": 164986,
-     "title": "[Bug]: 2026.9.8 update repair fails at finalize:plugins after Doctor offline maintenance",
-     "url": "https://github.com/openclaw/openclaw/issues/164986",
-     "state": "open",
-     "comments": 3,
-     "created": "2026-10-04",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
     }
    ]
   },
@@ -285,9 +434,9 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
-   "age_hours": 135,
+   "age_hours": 145,
    "issues_total": 8,
-   "issues_open": 6,
+   "issues_open": 5,
    "open_p0": 0,
    "open_severe": 0,
    "verdict": "ok",
@@ -300,17 +449,6 @@
      "state": "open",
      "comments": 2,
      "created": "2026-10-06",
-     "prio": "P1",
-     "severe": [],
-     "reactions": 1
-    },
-    {
-     "number": 166877,
-     "title": "[Bug]: 2026.8.35 forces strict OpenAI tool schemas \u2014 one MCP tool with a regex lookaround pattern fails every OpenAI turn (7.35 downgraded strict)",
-     "url": "https://github.com/openclaw/openclaw/issues/166877",
-     "state": "open",
-     "comments": 2,
-     "created": "2026-10-08",
      "prio": "P1",
      "severe": [],
      "reactions": 1
@@ -368,7 +506,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
-   "age_hours": 149,
+   "age_hours": 159,
    "issues_total": 0,
    "issues_open": 0,
    "open_p0": 0,
@@ -384,13 +522,13 @@
    "published": "2026-09-30",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
-   "age_hours": 193,
+   "age_hours": 202,
    "issues_total": 300,
    "issues_open": 172,
-   "open_p0": 42,
-   "open_severe": 50,
+   "open_p0": 41,
+   "open_severe": 51,
    "verdict": "hold",
-   "why": "42 open P0 and 50 open crash/blocker issues reported against it.",
+   "why": "41 open P0 and 51 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164074,
@@ -402,6 +540,21 @@
      "prio": "P0",
      "severe": [
       "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 162211,
+     "title": "Startup blocks the Gateway event loop for 40\u2013200s; health monitor misreads the stall as a disconnect and escalates into a restart loop",
+     "url": "https://github.com/openclaw/openclaw/issues/162211",
+     "state": "open",
+     "comments": 5,
+     "created": "2026-09-30",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:crash-loop",
       "impact:ux-release-blocker"
      ],
      "reactions": 1
@@ -479,32 +632,16 @@
      "reactions": 1
     },
     {
-     "number": 162211,
-     "title": "Startup blocks the Gateway event loop for 40\u2013200s; health monitor misreads the stall as a disconnect and escalates into a restart loop",
-     "url": "https://github.com/openclaw/openclaw/issues/162211",
+     "number": 163434,
+     "title": "age-based transcript trimming deletes the session header, and ensureTranscriptHeader cannot repair a partially trimmed transcript",
+     "url": "https://github.com/openclaw/openclaw/issues/163434",
      "state": "open",
      "comments": 4,
-     "created": "2026-09-30",
+     "created": "2026-10-02",
      "prio": "P0",
      "severe": [
       "P0",
-      "impact:crash-loop",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 161865,
-     "title": "[Bug]: pnpm self-update launches SQLite worker from removed old generation after stopping Gateway",
-     "url": "https://github.com/openclaw/openclaw/issues/161865",
-     "state": "open",
-     "comments": 3,
-     "created": "2026-09-30",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:crash-loop",
-      "impact:ux-release-blocker"
+      "impact:data-loss"
      ],
      "reactions": 1
     }
@@ -517,7 +654,7 @@
    "published": "2026-09-29",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
-   "age_hours": 218,
+   "age_hours": 228,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 1,
@@ -592,7 +729,7 @@
    "published": "2026-09-23",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
-   "age_hours": 342,
+   "age_hours": 352,
    "issues_total": 300,
    "issues_open": 202,
    "open_p0": 62,
@@ -722,7 +859,7 @@
    "published": "2026-09-21",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
-   "age_hours": 400,
+   "age_hours": 410,
    "issues_total": 19,
    "issues_open": 9,
    "open_p0": 2,
@@ -735,7 +872,7 @@
      "title": "[Bug]: Gateway blocks for minutes while capturing large external plugins (2026.9.6 regression)",
      "url": "https://github.com/openclaw/openclaw/issues/160959",
      "state": "open",
-     "comments": 7,
+     "comments": 8,
      "created": "2026-09-29",
      "prio": "P0",
      "severe": [
@@ -793,6 +930,17 @@
      "reactions": 2
     },
     {
+     "number": 165270,
+     "title": "[Bug]: xAI OAuth refresh exceeds 120000 ms hard timeout although endpoints respond in ~100 ms; 1 ms expiry sentinel forces refresh on every use",
+     "url": "https://github.com/openclaw/openclaw/issues/165270",
+     "state": "open",
+     "comments": 2,
+     "created": "2026-10-05",
+     "prio": "P2",
+     "severe": [],
+     "reactions": 1
+    },
+    {
      "number": 162790,
      "title": "MSTeams: project authenticated tenant identity into hooks and support tenantAllowlist",
      "url": "https://github.com/openclaw/openclaw/issues/162790",
@@ -813,17 +961,6 @@
      "prio": "P2",
      "severe": [],
      "reactions": 1
-    },
-    {
-     "number": 165270,
-     "title": "[Bug]: xAI OAuth refresh exceeds 120000 ms hard timeout although endpoints respond in ~100 ms; 1 ms expiry sentinel forces refresh on every use",
-     "url": "https://github.com/openclaw/openclaw/issues/165270",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-10-05",
-     "prio": "P2",
-     "severe": [],
-     "reactions": 1
     }
    ]
   },
@@ -834,7 +971,7 @@
    "published": "2026-09-19",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
-   "age_hours": 460,
+   "age_hours": 469,
    "issues_total": 300,
    "issues_open": 158,
    "open_p0": 74,
@@ -883,8 +1020,7 @@
      "prio": "P0",
      "severe": [
       "P0",
-      "impact:crash-loop",
-      "impact:ux-release-blocker"
+      "impact:crash-loop"
      ],
      "reactions": 2
     },
@@ -968,13 +1104,13 @@
    "published": "2026-09-11",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
-   "age_hours": 650,
+   "age_hours": 659,
    "issues_total": 300,
-   "issues_open": 158,
-   "open_p0": 55,
-   "open_severe": 61,
+   "issues_open": 157,
+   "open_p0": 54,
+   "open_severe": 60,
    "verdict": "hold",
-   "why": "55 open P0 and 61 open crash/blocker issues reported against it.",
+   "why": "54 open P0 and 60 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 149538,
@@ -1089,67 +1225,6 @@
       "P0",
       "impact:ux-release-blocker"
      ],
-     "reactions": 1
-    }
-   ]
-  },
-  {
-   "version": "2026.6.35",
-   "line": "extended-stable",
-   "tag": "v2026.6.35",
-   "published": "2026-09-10",
-   "prerelease": false,
-   "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.35",
-   "age_hours": 671,
-   "issues_total": 8,
-   "issues_open": 4,
-   "open_p0": 0,
-   "open_severe": 0,
-   "verdict": "ok",
-   "why": "No open P0, crash-loop or release-blocker issues reported against it yet.",
-   "top": [
-    {
-     "number": 152533,
-     "title": "[Bug]: 2026.9.5 updater upgrades core but cannot refresh legacy systemd service due to unsafe-permissions",
-     "url": "https://github.com/openclaw/openclaw/issues/152533",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-09-19",
-     "prio": "P2",
-     "severe": [],
-     "reactions": 1
-    },
-    {
-     "number": 151054,
-     "title": "[Docs Bug]: v2026.6.35 (final extended-stable) does not state which 2026-09-11 security advisories it backports",
-     "url": "https://github.com/openclaw/openclaw/issues/151054",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-09-17",
-     "prio": "P2",
-     "severe": [],
-     "reactions": 1
-    },
-    {
-     "number": 156590,
-     "title": "[Feature]: Scope cap for silent local pairing (middle ground for gateway.nodes.pairing.autoApproveLocal)",
-     "url": "https://github.com/openclaw/openclaw/issues/156590",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-09-23",
-     "prio": "P2",
-     "severe": [],
-     "reactions": 1
-    },
-    {
-     "number": 157364,
-     "title": "[Bug]: tool calls dispatched alongside an accepted sessions_yield are aborted in preflight and their side effects are silently lost",
-     "url": "https://github.com/openclaw/openclaw/issues/157364",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-09-24",
-     "prio": "P1",
-     "severe": [],
      "reactions": 1
     }
    ]

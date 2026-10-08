@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-10-08 06:04 UTC",
- "total": 722,
- "last7": 96,
+ "generated_at": "2026-10-08 15:37 UTC",
+ "total": 733,
+ "last7": 107,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   292
+   297
   ],
   [
    "linux/x64",
-   197
+   200
   ],
   [
    "win32/x64",
-   169
+   170
   ],
   [
    "darwin/x64",
-   37
+   39
   ],
   [
    "linux/arm64",
@@ -160,18 +160,21 @@
   ],
   [
    "2026-10-08",
-   6
+   17
   ]
  ],
  "codes": {
+  "managed-service-update-handoff": 6,
+  "package-swap": 7,
+  "runtime-verification-failed": 96,
+  "requested": 14,
+  "post-update-verification": 2,
+  "finalize:doctor": 41,
+  "gateway-recovery-verification": 25,
   "plugin-target-unavailable": 68,
-  "runtime-verification-failed": 95,
-  "gateway-recovery-verification": 24,
   "global-install-failed": 141,
   "managed-service-preflight": 34,
-  "package-swap": 3,
   "global-install-foreign-destination": 10,
-  "managed-service-update-handoff": 4,
   "doctor-failed": 50,
   "previous-version-unverified": 1,
   "updater-runtime-retention": 3,
@@ -182,7 +185,6 @@
   "clean-check": 2,
   "package-permissions": 2,
   "reconcile:abandoned": 12,
-  "requested": 13,
   "update-executor-settlement": 1,
   "activating": 5,
   "package-doctor": 1,
@@ -192,13 +194,11 @@
   "candidate-state-snapshot": 1,
   "validating": 5,
   "not-git-install": 5,
-  "post-update-verification": 1,
   "gateway-verification": 1,
   "invalid-config": 7,
   "global-install-permission-denied": 1,
   "update": 1,
   "global-install-swap": 1,
-  "finalize:doctor": 40,
   "repairing": 22,
   "not-recorded": 1,
   "finalize-target-config-convergence": 1,
