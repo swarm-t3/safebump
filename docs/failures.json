@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-07 21:20 UTC",
- "total": 714,
- "last7": 106,
+ "generated_at": "2026-10-08 06:04 UTC",
+ "total": 722,
+ "last7": 96,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   288
+   292
   ],
   [
    "linux/x64",
-   196
+   197
   ],
   [
    "win32/x64",
-   166
+   169
   ],
   [
    "darwin/x64",
@@ -156,15 +156,20 @@
   ],
   [
    "2026-10-07",
-   13
+   15
+  ],
+  [
+   "2026-10-08",
+   6
   ]
  ],
  "codes": {
+  "plugin-target-unavailable": 68,
+  "runtime-verification-failed": 95,
+  "gateway-recovery-verification": 24,
+  "global-install-failed": 141,
   "managed-service-preflight": 34,
-  "global-install-failed": 139,
-  "runtime-verification-failed": 93,
   "package-swap": 3,
-  "gateway-recovery-verification": 21,
   "global-install-foreign-destination": 10,
   "managed-service-update-handoff": 4,
   "doctor-failed": 50,
@@ -173,7 +178,6 @@
   "verifying": 4,
   "target-metadata-preflight": 4,
   "unexpected-error": 59,
-  "plugin-target-unavailable": 67,
   "managed-service-handoff-unavailable": 12,
   "clean-check": 2,
   "package-permissions": 2,

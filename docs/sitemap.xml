@@ -4,6 +4,7 @@
 <url><loc>https://swarm-t3.github.io/safebump/failures.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/pay.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/v/2026.10.1-beta.1.html</loc></url>
+<url><loc>https://swarm-t3.github.io/safebump/v/2026.10.1-beta.2.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/v/2026.6.35.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/v/2026.7.35.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/v/2026.8.33.html</loc></url>
@@ -22,10 +23,10 @@
 <url><loc>https://swarm-t3.github.io/safebump/code/doctor-failed.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/finalize-doctor.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/managed-service-preflight.html</loc></url>
+<url><loc>https://swarm-t3.github.io/safebump/code/gateway-recovery-verification.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/post-update-plugins.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/database-schema-preflight.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/repairing.html</loc></url>
-<url><loc>https://swarm-t3.github.io/safebump/code/gateway-recovery-verification.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/requested.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/managed-service-handoff-unavailable.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/reconcile-abandoned.html</loc></url>
