@@ -1,28 +1,28 @@
 {
- "generated_at": "2026-10-08 21:21 UTC",
- "total": 748,
- "last7": 122,
+ "generated_at": "2026-10-09 06:09 UTC",
+ "total": 759,
+ "last7": 118,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   305
+   310
   ],
   [
    "linux/x64",
-   205
+   206
   ],
   [
    "win32/x64",
-   171
+   172
   ],
   [
    "darwin/x64",
-   40
+   42
   ],
   [
    "linux/arm64",
-   24
+   26
   ],
   [
    "android/arm64",
@@ -160,22 +160,27 @@
   ],
   [
    "2026-10-08",
-   32
+   34
+  ],
+  [
+   "2026-10-09",
+   9
   ]
  ],
  "codes": {
-  "package-swap": 12,
+  "reconcile:abandoned": 14,
+  "runtime-verification-failed": 97,
+  "gateway-recovery-verification": 28,
+  "requested": 15,
+  "global-install-failed": 145,
+  "package-swap": 14,
+  "candidate-doctor": 4,
   "plugin-target-unavailable": 69,
   "package-doctor": 2,
-  "candidate-doctor": 3,
-  "global-install-failed": 143,
-  "gateway-recovery-verification": 26,
   "finalize-doctor": 1,
   "managed-service-preflight": 35,
   "package-update": 1,
   "managed-service-update-handoff": 6,
-  "runtime-verification-failed": 96,
-  "requested": 14,
   "post-update-verification": 2,
   "finalize:doctor": 41,
   "global-install-foreign-destination": 10,
@@ -188,7 +193,6 @@
   "managed-service-handoff-unavailable": 12,
   "clean-check": 2,
   "package-permissions": 2,
-  "reconcile:abandoned": 12,
   "update-executor-settlement": 1,
   "activating": 5,
   "pnpm-staging-preflight": 1,
