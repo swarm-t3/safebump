@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-09 15:20 UTC",
- "total": 777,
- "last7": 136,
+ "generated_at": "2026-10-09 20:55 UTC",
+ "total": 784,
+ "last7": 143,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   322
+   326
   ],
   [
    "linux/x64",
-   210
+   212
   ],
   [
    "win32/x64",
-   173
+   174
   ],
   [
    "darwin/x64",
@@ -164,14 +164,15 @@
   ],
   [
    "2026-10-09",
-   27
+   34
   ]
  ],
  "codes": {
+  "package-swap": 29,
+  "gateway-recovery-verification": 31,
+  "candidate-state-snapshot": 3,
   "doctor-failed": 51,
-  "package-swap": 25,
   "invalid-config": 8,
-  "gateway-recovery-verification": 30,
   "updater-runtime-retention": 4,
   "managed-service-preflight": 36,
   "managed-service-update-handoff": 7,
@@ -198,7 +199,6 @@
   "activating": 5,
   "pnpm-staging-preflight": 1,
   "database-schema-preflight": 22,
-  "candidate-state-snapshot": 1,
   "validating": 5,
   "not-git-install": 5,
   "gateway-verification": 1,

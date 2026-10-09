@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09 15:19 UTC",
+ "generated_at": "2026-10-09 20:54 UTC",
  "repo": "openclaw/openclaw",
  "window_days": 14,
  "recommended": null,
@@ -12,13 +12,13 @@
    "published": "2026-10-08",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9",
-   "age_hours": 28,
-   "issues_total": 113,
-   "issues_open": 41,
-   "open_p0": 8,
-   "open_severe": 11,
+   "age_hours": 34,
+   "issues_total": 143,
+   "issues_open": 53,
+   "open_p0": 7,
+   "open_severe": 10,
    "verdict": "too-new",
-   "why": "Released 28h ago. Most regressions are reported in the first 72h. Wait.",
+   "why": "Released 34h ago. Most regressions are reported in the first 72h. Wait.",
    "top": [
     {
      "number": 167652,
@@ -50,21 +50,6 @@
      "reactions": 1
     },
     {
-     "number": 167835,
-     "title": "[Windows] gateway.cmd hardcodes the pnpm version path, so any package update leaves the Scheduled Task unstartable",
-     "url": "https://github.com/openclaw/openclaw/issues/167835",
-     "state": "open",
-     "comments": 4,
-     "created": "2026-10-09",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:crash-loop",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
      "number": 167557,
      "title": "[Bug]: Deferred plugin data/settings migration never converges (Linux/npm); package recovery reports \"managed handoff lease database identity changed\"",
      "url": "https://github.com/openclaw/openclaw/issues/167557",
@@ -83,12 +68,27 @@
      "title": "OpenClaw 2026.9.8: deleted temporary handoff database blocks package recovery and all future updates",
      "url": "https://github.com/openclaw/openclaw/issues/167506",
      "state": "open",
-     "comments": 2,
+     "comments": 3,
      "created": "2026-10-08",
      "prio": "P0",
      "severe": [
       "P0",
       "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167406,
+     "title": "[Bug]: Windows MSIX 2026.9.900.0: Codex-enabled Gateway startup starves main thread",
+     "url": "https://github.com/openclaw/openclaw/issues/167406",
+     "state": "open",
+     "comments": 2,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "bug:crash",
+      "impact:crash-loop"
      ],
      "reactions": 1
     },
@@ -107,21 +107,6 @@
      "reactions": 1
     },
     {
-     "number": 167406,
-     "title": "[Bug]: Windows MSIX 2026.9.900.0: Codex-enabled Gateway startup starves main thread",
-     "url": "https://github.com/openclaw/openclaw/issues/167406",
-     "state": "open",
-     "comments": 1,
-     "created": "2026-10-08",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "bug:crash",
-      "impact:crash-loop"
-     ],
-     "reactions": 1
-    },
-    {
      "number": 167663,
      "title": "[Bug]: Rosetta can crash native pipe creation through Koffi",
      "url": "https://github.com/openclaw/openclaw/issues/167663",
@@ -131,6 +116,20 @@
      "prio": "P0",
      "severe": [
       "P0",
+      "impact:crash-loop"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167623,
+     "title": "[Bug]:",
+     "url": "https://github.com/openclaw/openclaw/issues/167623",
+     "state": "open",
+     "comments": 3,
+     "created": "2026-10-09",
+     "prio": "P1",
+     "severe": [
+      "bug:crash",
       "impact:crash-loop"
      ],
      "reactions": 1
@@ -144,20 +143,20 @@
    "published": "2026-10-08",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2",
-   "age_hours": 38,
-   "issues_total": 11,
-   "issues_open": 5,
+   "age_hours": 44,
+   "issues_total": 12,
+   "issues_open": 6,
    "open_p0": 1,
    "open_severe": 2,
    "verdict": "too-new",
-   "why": "Released 38h ago. Most regressions are reported in the first 72h. Wait.",
+   "why": "Released 44h ago. Most regressions are reported in the first 72h. Wait.",
    "top": [
     {
      "number": 167771,
      "title": "[Bug]: OpenClaw updates are permanently blocked by update-recovery-pending / managed handoff lease database identity changed, with no repair path (triage: no resolution predicate)",
      "url": "https://github.com/openclaw/openclaw/issues/167771",
      "state": "open",
-     "comments": 5,
+     "comments": 9,
      "created": "2026-10-09",
      "prio": "P0",
      "severe": [
@@ -211,6 +210,17 @@
      "prio": "P2",
      "severe": [],
      "reactions": 1
+    },
+    {
+     "number": 167862,
+     "title": "[Bug]: before_agent_finalize \"revise\" is ignored after any tool call, so the plugin-rejected draft is finalized",
+     "url": "https://github.com/openclaw/openclaw/issues/167862",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-09",
+     "prio": "P2",
+     "severe": [],
+     "reactions": 1
     }
    ]
   },
@@ -221,9 +231,9 @@
    "published": "2026-10-05",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1",
-   "age_hours": 91,
-   "issues_total": 37,
-   "issues_open": 20,
+   "age_hours": 97,
+   "issues_total": 38,
+   "issues_open": 21,
    "open_p0": 5,
    "open_severe": 7,
    "verdict": "hold",
@@ -234,7 +244,7 @@
      "title": "[Bug]: OpenClaw updates are permanently blocked by update-recovery-pending / managed handoff lease database identity changed, with no repair path (triage: no resolution predicate)",
      "url": "https://github.com/openclaw/openclaw/issues/167771",
      "state": "open",
-     "comments": 5,
+     "comments": 9,
      "created": "2026-10-09",
      "prio": "P0",
      "severe": [
@@ -345,9 +355,9 @@
    "published": "2026-10-03",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
-   "age_hours": 155,
+   "age_hours": 161,
    "issues_total": 300,
-   "issues_open": 132,
+   "issues_open": 128,
    "open_p0": 23,
    "open_severe": 32,
    "verdict": "hold",
@@ -479,7 +489,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
-   "age_hours": 169,
+   "age_hours": 174,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 0,
@@ -551,7 +561,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
-   "age_hours": 183,
+   "age_hours": 188,
    "issues_total": 0,
    "issues_open": 0,
    "open_p0": 0,
@@ -567,9 +577,9 @@
    "published": "2026-09-30",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
-   "age_hours": 226,
+   "age_hours": 232,
    "issues_total": 300,
-   "issues_open": 152,
+   "issues_open": 151,
    "open_p0": 30,
    "open_severe": 39,
    "verdict": "hold",
@@ -701,7 +711,7 @@
    "published": "2026-09-29",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
-   "age_hours": 252,
+   "age_hours": 257,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 1,
@@ -776,13 +786,13 @@
    "published": "2026-09-23",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
-   "age_hours": 375,
+   "age_hours": 381,
    "issues_total": 300,
    "issues_open": 188,
-   "open_p0": 57,
-   "open_severe": 73,
+   "open_p0": 58,
+   "open_severe": 74,
    "verdict": "hold",
-   "why": "57 open P0 and 73 open crash/blocker issues reported against it.",
+   "why": "58 open P0 and 74 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 159662,
@@ -906,9 +916,9 @@
    "published": "2026-09-21",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
-   "age_hours": 434,
+   "age_hours": 439,
    "issues_total": 19,
-   "issues_open": 9,
+   "issues_open": 8,
    "open_p0": 2,
    "open_severe": 2,
    "verdict": "hold",
@@ -941,18 +951,7 @@
       "impact:crash-loop",
       "impact:ux-release-blocker"
      ],
-     "reactions": 1
-    },
-    {
-     "number": 158271,
-     "title": "[Bug]: `openclaw agent` turns flip messageToolPolicyHash, invalidating the claude-cli session (reason=message-policy) on every switch with chat/sessions.send turns",
-     "url": "https://github.com/openclaw/openclaw/issues/158271",
-     "state": "open",
-     "comments": 5,
-     "created": "2026-09-25",
-     "prio": "P1",
-     "severe": [],
-     "reactions": 1
+     "reactions": 2
     },
     {
      "number": 162074,
@@ -1008,6 +1007,17 @@
      "prio": "P2",
      "severe": [],
      "reactions": 1
+    },
+    {
+     "number": 164433,
+     "title": "[Feature]: Versioned Upgrade Recipes with qualified execution and recovery",
+     "url": "https://github.com/openclaw/openclaw/issues/164433",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-03",
+     "prio": "P3",
+     "severe": [],
+     "reactions": 1
     }
    ]
   },
@@ -1018,9 +1028,9 @@
    "published": "2026-09-19",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
-   "age_hours": 493,
+   "age_hours": 498,
    "issues_total": 300,
-   "issues_open": 132,
+   "issues_open": 131,
    "open_p0": 53,
    "open_severe": 61,
    "verdict": "hold",
@@ -1151,7 +1161,7 @@
    "published": "2026-09-11",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
-   "age_hours": 683,
+   "age_hours": 689,
    "issues_total": 300,
    "issues_open": 139,
    "open_p0": 48,
