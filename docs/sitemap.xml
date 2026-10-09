@@ -25,12 +25,12 @@
 <url><loc>https://swarm-t3.github.io/safebump/code/finalize-doctor.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/managed-service-preflight.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/gateway-recovery-verification.html</loc></url>
+<url><loc>https://swarm-t3.github.io/safebump/code/package-swap.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/post-update-plugins.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/database-schema-preflight.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/repairing.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/requested.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/reconcile-abandoned.html</loc></url>
-<url><loc>https://swarm-t3.github.io/safebump/code/package-swap.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/managed-service-handoff-unavailable.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/global-install-foreign-destination.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/invalid-config.html</loc></url>
@@ -39,11 +39,11 @@
 <url><loc>https://swarm-t3.github.io/safebump/code/validating.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/not-git-install.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/finalize-targetconfigconvergence.html</loc></url>
+<url><loc>https://swarm-t3.github.io/safebump/code/updater-runtime-retention.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/candidate-doctor.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/verifying.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/target-metadata-preflight.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/post-update-failed.html</loc></url>
-<url><loc>https://swarm-t3.github.io/safebump/code/updater-runtime-retention.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/state-migrated-no-rollback.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/fetch-failed.html</loc></url>
 <url><loc>https://swarm-t3.github.io/safebump/code/managed-service-handoff-already-running.html</loc></url>

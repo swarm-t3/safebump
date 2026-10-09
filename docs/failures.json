@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-10-09 06:09 UTC",
- "total": 759,
- "last7": 118,
+ "generated_at": "2026-10-09 15:20 UTC",
+ "total": 777,
+ "last7": 136,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   310
+   322
   ],
   [
    "linux/x64",
-   206
+   210
   ],
   [
    "win32/x64",
-   172
+   173
   ],
   [
    "darwin/x64",
-   42
+   43
   ],
   [
    "linux/arm64",
@@ -164,29 +164,30 @@
   ],
   [
    "2026-10-09",
-   9
+   27
   ]
  ],
  "codes": {
+  "doctor-failed": 51,
+  "package-swap": 25,
+  "invalid-config": 8,
+  "gateway-recovery-verification": 30,
+  "updater-runtime-retention": 4,
+  "managed-service-preflight": 36,
+  "managed-service-update-handoff": 7,
   "reconcile:abandoned": 14,
   "runtime-verification-failed": 97,
-  "gateway-recovery-verification": 28,
   "requested": 15,
   "global-install-failed": 145,
-  "package-swap": 14,
   "candidate-doctor": 4,
   "plugin-target-unavailable": 69,
   "package-doctor": 2,
   "finalize-doctor": 1,
-  "managed-service-preflight": 35,
   "package-update": 1,
-  "managed-service-update-handoff": 6,
   "post-update-verification": 2,
   "finalize:doctor": 41,
   "global-install-foreign-destination": 10,
-  "doctor-failed": 50,
   "previous-version-unverified": 1,
-  "updater-runtime-retention": 3,
   "verifying": 4,
   "target-metadata-preflight": 4,
   "unexpected-error": 59,
@@ -201,7 +202,6 @@
   "validating": 5,
   "not-git-install": 5,
   "gateway-verification": 1,
-  "invalid-config": 7,
   "global-install-permission-denied": 1,
   "update": 1,
   "global-install-swap": 1,
