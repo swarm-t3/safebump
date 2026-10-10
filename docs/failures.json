@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-10 05:52 UTC",
- "total": 792,
- "last7": 140,
+ "generated_at": "2026-10-10 14:29 UTC",
+ "total": 797,
+ "last7": 145,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   329
+   331
   ],
   [
    "linux/x64",
-   217
+   219
   ],
   [
    "win32/x64",
@@ -18,7 +18,7 @@
   ],
   [
    "darwin/x64",
-   43
+   44
   ],
   [
    "linux/arm64",
@@ -168,13 +168,16 @@
   ],
   [
    "2026-10-10",
-   7
+   12
   ]
  ],
  "codes": {
-  "package-swap": 33,
+  "package-swap": 34,
+  "global-install-foreign-destination": 11,
+  "managed-service-update-handoff": 11,
+  "global-install-failed": 146,
+  "finalize-doctor": 2,
   "runtime-verification-failed": 98,
-  "managed-service-update-handoff": 10,
   "gateway-recovery-verification": 31,
   "candidate-state-snapshot": 3,
   "doctor-failed": 51,
@@ -183,15 +186,12 @@
   "managed-service-preflight": 36,
   "reconcile:abandoned": 14,
   "requested": 15,
-  "global-install-failed": 145,
   "candidate-doctor": 4,
   "plugin-target-unavailable": 69,
   "package-doctor": 2,
-  "finalize-doctor": 1,
   "package-update": 1,
   "post-update-verification": 2,
   "finalize:doctor": 41,
-  "global-install-foreign-destination": 10,
   "previous-version-unverified": 1,
   "verifying": 4,
   "target-metadata-preflight": 4,
