@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-10 14:29 UTC",
- "total": 797,
- "last7": 145,
+ "generated_at": "2026-10-10 20:05 UTC",
+ "total": 800,
+ "last7": 148,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   331
+   332
   ],
   [
    "linux/x64",
-   219
+   221
   ],
   [
    "win32/x64",
@@ -168,19 +168,20 @@
   ],
   [
    "2026-10-10",
-   12
+   15
   ]
  ],
  "codes": {
+  "package-doctor": 3,
+  "doctor-failed": 52,
+  "gateway-recovery-verification": 32,
   "package-swap": 34,
   "global-install-foreign-destination": 11,
   "managed-service-update-handoff": 11,
   "global-install-failed": 146,
   "finalize-doctor": 2,
   "runtime-verification-failed": 98,
-  "gateway-recovery-verification": 31,
   "candidate-state-snapshot": 3,
-  "doctor-failed": 51,
   "invalid-config": 8,
   "updater-runtime-retention": 4,
   "managed-service-preflight": 36,
@@ -188,7 +189,6 @@
   "requested": 15,
   "candidate-doctor": 4,
   "plugin-target-unavailable": 69,
-  "package-doctor": 2,
   "package-update": 1,
   "post-update-verification": 2,
   "finalize:doctor": 41,

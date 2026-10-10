@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-10 14:29 UTC",
+ "generated_at": "2026-10-10 20:05 UTC",
  "repo": "openclaw/openclaw",
  "window_days": 14,
  "recommended": null,
@@ -12,20 +12,20 @@
    "published": "2026-10-08",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9",
-   "age_hours": 52,
-   "issues_total": 203,
-   "issues_open": 83,
-   "open_p0": 18,
-   "open_severe": 22,
+   "age_hours": 57,
+   "issues_total": 223,
+   "issues_open": 94,
+   "open_p0": 19,
+   "open_severe": 26,
    "verdict": "hold",
-   "why": "18 open P0 and 22 open crash/blocker issues reported against it.",
+   "why": "19 open P0 and 26 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 167652,
      "title": "[Bug]: Windows Gateway hangs after 2026.9.9 upgrade despite Doctor reporting verified restart",
      "url": "https://github.com/openclaw/openclaw/issues/167652",
      "state": "open",
-     "comments": 6,
+     "comments": 7,
      "created": "2026-10-09",
      "prio": "P0",
      "severe": [
@@ -50,6 +50,21 @@
      "reactions": 1
     },
     {
+     "number": 167406,
+     "title": "[Bug]: Windows MSIX 2026.9.900.0: Codex-enabled Gateway startup starves main thread",
+     "url": "https://github.com/openclaw/openclaw/issues/167406",
+     "state": "open",
+     "comments": 5,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "bug:crash",
+      "impact:crash-loop"
+     ],
+     "reactions": 1
+    },
+    {
      "number": 167557,
      "title": "[Bug]: Deferred plugin data/settings migration never converges (Linux/npm); package recovery reports \"managed handoff lease database identity changed\"",
      "url": "https://github.com/openclaw/openclaw/issues/167557",
@@ -60,21 +75,6 @@
      "severe": [
       "P0",
       "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 167406,
-     "title": "[Bug]: Windows MSIX 2026.9.900.0: Codex-enabled Gateway startup starves main thread",
-     "url": "https://github.com/openclaw/openclaw/issues/167406",
-     "state": "open",
-     "comments": 4,
-     "created": "2026-10-08",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "bug:crash",
-      "impact:crash-loop"
      ],
      "reactions": 1
     },
@@ -93,11 +93,11 @@
      "reactions": 1
     },
     {
-     "number": 168205,
-     "title": "Update failure: package-swap (2026.9.9)",
-     "url": "https://github.com/openclaw/openclaw/issues/168205",
+     "number": 168372,
+     "title": "Assistant agent-creation flow loses the new agent: config never committed before its own gateway.restart.safe",
+     "url": "https://github.com/openclaw/openclaw/issues/168372",
      "state": "open",
-     "comments": 1,
+     "comments": 2,
      "created": "2026-10-10",
      "prio": "P0",
      "severe": [
@@ -107,9 +107,9 @@
      "reactions": 1
     },
     {
-     "number": 168251,
-     "title": "[Bug] App Update button fails with managed-service-preflight when Gateway runs as launchd service with custom npm plugins",
-     "url": "https://github.com/openclaw/openclaw/issues/168251",
+     "number": 168205,
+     "title": "Update failure: package-swap (2026.9.9)",
+     "url": "https://github.com/openclaw/openclaw/issues/168205",
      "state": "open",
      "comments": 1,
      "created": "2026-10-10",
@@ -143,7 +143,7 @@
    "published": "2026-10-08",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2",
-   "age_hours": 61,
+   "age_hours": 67,
    "issues_total": 13,
    "issues_open": 7,
    "open_p0": 2,
@@ -245,7 +245,7 @@
    "published": "2026-10-05",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1",
-   "age_hours": 114,
+   "age_hours": 120,
    "issues_total": 41,
    "issues_open": 23,
    "open_p0": 6,
@@ -372,25 +372,40 @@
    "published": "2026-10-03",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
-   "age_hours": 179,
+   "age_hours": 184,
    "issues_total": 300,
-   "issues_open": 125,
-   "open_p0": 23,
-   "open_severe": 32,
+   "issues_open": 127,
+   "open_p0": 24,
+   "open_severe": 33,
    "verdict": "hold",
-   "why": "23 open P0 and 32 open crash/blocker issues reported against it.",
+   "why": "24 open P0 and 33 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164396,
      "title": "[Bug]: Openclaw 2026.9.8 refuses to connect to its local gateway after clean node 22 LTS and windows 11 install.",
      "url": "https://github.com/openclaw/openclaw/issues/164396",
      "state": "open",
-     "comments": 7,
+     "comments": 8,
      "created": "2026-10-03",
      "prio": "P0",
      "severe": [
       "P0",
       "bug:crash",
+      "impact:crash-loop",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167652,
+     "title": "[Bug]: Windows Gateway hangs after 2026.9.9 upgrade despite Doctor reporting verified restart",
+     "url": "https://github.com/openclaw/openclaw/issues/167652",
+     "state": "open",
+     "comments": 7,
+     "created": "2026-10-09",
+     "prio": "P0",
+     "severe": [
+      "P0",
       "impact:crash-loop",
       "impact:ux-release-blocker"
      ],
@@ -435,21 +450,6 @@
      "prio": "P0",
      "severe": [
       "P0",
-      "impact:ux-release-blocker"
-     ],
-     "reactions": 1
-    },
-    {
-     "number": 167652,
-     "title": "[Bug]: Windows Gateway hangs after 2026.9.9 upgrade despite Doctor reporting verified restart",
-     "url": "https://github.com/openclaw/openclaw/issues/167652",
-     "state": "open",
-     "comments": 6,
-     "created": "2026-10-09",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:crash-loop",
       "impact:ux-release-blocker"
      ],
      "reactions": 1
@@ -506,7 +506,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
-   "age_hours": 192,
+   "age_hours": 197,
    "issues_total": 9,
    "issues_open": 5,
    "open_p0": 0,
@@ -578,7 +578,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
-   "age_hours": 206,
+   "age_hours": 211,
    "issues_total": 0,
    "issues_open": 0,
    "open_p0": 0,
@@ -594,9 +594,9 @@
    "published": "2026-09-30",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
-   "age_hours": 249,
+   "age_hours": 255,
    "issues_total": 300,
-   "issues_open": 150,
+   "issues_open": 151,
    "open_p0": 30,
    "open_severe": 39,
    "verdict": "hold",
@@ -727,7 +727,7 @@
    "published": "2026-09-29",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
-   "age_hours": 275,
+   "age_hours": 280,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 1,
@@ -802,13 +802,13 @@
    "published": "2026-09-23",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
-   "age_hours": 399,
+   "age_hours": 404,
    "issues_total": 300,
-   "issues_open": 185,
+   "issues_open": 183,
    "open_p0": 56,
-   "open_severe": 73,
+   "open_severe": 72,
    "verdict": "hold",
-   "why": "56 open P0 and 73 open crash/blocker issues reported against it.",
+   "why": "56 open P0 and 72 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 159662,
@@ -871,12 +871,13 @@
      "title": "Gateway crash: state DB read-admission seal -> \"Worker environment inventory has closed\" -> unhandled rejection in reconcileActive",
      "url": "https://github.com/openclaw/openclaw/issues/160521",
      "state": "open",
-     "comments": 12,
+     "comments": 13,
      "created": "2026-09-28",
      "prio": "P0",
      "severe": [
       "P0",
-      "impact:crash-loop"
+      "impact:crash-loop",
+      "impact:ux-release-blocker"
      ],
      "reactions": 1
     },
@@ -932,7 +933,7 @@
    "published": "2026-09-21",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
-   "age_hours": 457,
+   "age_hours": 462,
    "issues_total": 19,
    "issues_open": 8,
    "open_p0": 2,
@@ -1044,7 +1045,7 @@
    "published": "2026-09-19",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
-   "age_hours": 516,
+   "age_hours": 522,
    "issues_total": 300,
    "issues_open": 130,
    "open_p0": 52,
@@ -1177,9 +1178,9 @@
    "published": "2026-09-11",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
-   "age_hours": 706,
+   "age_hours": 712,
    "issues_total": 300,
-   "issues_open": 142,
+   "issues_open": 144,
    "open_p0": 47,
    "open_severe": 52,
    "verdict": "hold",
