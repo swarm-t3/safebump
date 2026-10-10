@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-09 20:55 UTC",
- "total": 784,
- "last7": 143,
+ "generated_at": "2026-10-10 05:52 UTC",
+ "total": 792,
+ "last7": 140,
  "first": "2026-09-01",
  "platforms": [
   [
    "darwin/arm64",
-   326
+   329
   ],
   [
    "linux/x64",
-   212
+   217
   ],
   [
    "win32/x64",
@@ -164,20 +164,24 @@
   ],
   [
    "2026-10-09",
-   34
+   35
+  ],
+  [
+   "2026-10-10",
+   7
   ]
  ],
  "codes": {
-  "package-swap": 29,
+  "package-swap": 33,
+  "runtime-verification-failed": 98,
+  "managed-service-update-handoff": 10,
   "gateway-recovery-verification": 31,
   "candidate-state-snapshot": 3,
   "doctor-failed": 51,
   "invalid-config": 8,
   "updater-runtime-retention": 4,
   "managed-service-preflight": 36,
-  "managed-service-update-handoff": 7,
   "reconcile:abandoned": 14,
-  "runtime-verification-failed": 97,
   "requested": 15,
   "global-install-failed": 145,
   "candidate-doctor": 4,

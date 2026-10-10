@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09 20:54 UTC",
+ "generated_at": "2026-10-10 05:52 UTC",
  "repo": "openclaw/openclaw",
  "window_days": 14,
  "recommended": null,
@@ -12,13 +12,13 @@
    "published": "2026-10-08",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.9",
-   "age_hours": 34,
-   "issues_total": 143,
-   "issues_open": 53,
-   "open_p0": 7,
-   "open_severe": 10,
+   "age_hours": 43,
+   "issues_total": 166,
+   "issues_open": 63,
+   "open_p0": 13,
+   "open_severe": 16,
    "verdict": "too-new",
-   "why": "Released 34h ago. Most regressions are reported in the first 72h. Wait.",
+   "why": "Released 43h ago. Most regressions are reported in the first 72h. Wait.",
    "top": [
     {
      "number": 167652,
@@ -82,7 +82,7 @@
      "title": "[Bug]: Windows MSIX 2026.9.900.0: Codex-enabled Gateway startup starves main thread",
      "url": "https://github.com/openclaw/openclaw/issues/167406",
      "state": "open",
-     "comments": 2,
+     "comments": 3,
      "created": "2026-10-08",
      "prio": "P0",
      "severe": [
@@ -93,12 +93,12 @@
      "reactions": 1
     },
     {
-     "number": 167636,
-     "title": "[Bug]: Onboarding forces `opencode/claude-opus-5` as default model even when the Zen subscription doesn't include it",
-     "url": "https://github.com/openclaw/openclaw/issues/167636",
+     "number": 168205,
+     "title": "Update failure: package-swap (2026.9.9)",
+     "url": "https://github.com/openclaw/openclaw/issues/168205",
      "state": "open",
      "comments": 1,
-     "created": "2026-10-09",
+     "created": "2026-10-10",
      "prio": "P0",
      "severe": [
       "P0",
@@ -107,30 +107,30 @@
      "reactions": 1
     },
     {
-     "number": 167663,
-     "title": "[Bug]: Rosetta can crash native pipe creation through Koffi",
-     "url": "https://github.com/openclaw/openclaw/issues/167663",
+     "number": 168092,
+     "title": "[Bug]: macOS 2026.9.8 \u2192 2026.9.9 update blocked by anchor-retired journal identity mismatch",
+     "url": "https://github.com/openclaw/openclaw/issues/168092",
      "state": "open",
      "comments": 1,
-     "created": "2026-10-09",
+     "created": "2026-10-10",
      "prio": "P0",
      "severe": [
       "P0",
-      "impact:crash-loop"
+      "impact:ux-release-blocker"
      ],
      "reactions": 1
     },
     {
-     "number": 167623,
-     "title": "[Bug]:",
-     "url": "https://github.com/openclaw/openclaw/issues/167623",
+     "number": 168124,
+     "title": "Update failure: managed-service-update-handoff (2026.9.8)",
+     "url": "https://github.com/openclaw/openclaw/issues/168124",
      "state": "open",
-     "comments": 3,
-     "created": "2026-10-09",
-     "prio": "P1",
+     "comments": 1,
+     "created": "2026-10-10",
+     "prio": "P0",
      "severe": [
-      "bug:crash",
-      "impact:crash-loop"
+      "P0",
+      "impact:ux-release-blocker"
      ],
      "reactions": 1
     }
@@ -143,13 +143,13 @@
    "published": "2026-10-08",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2",
-   "age_hours": 44,
-   "issues_total": 12,
-   "issues_open": 6,
-   "open_p0": 1,
-   "open_severe": 2,
-   "verdict": "too-new",
-   "why": "Released 44h ago. Most regressions are reported in the first 72h. Wait.",
+   "age_hours": 53,
+   "issues_total": 13,
+   "issues_open": 7,
+   "open_p0": 2,
+   "open_severe": 3,
+   "verdict": "hold",
+   "why": "2 open P0 and 3 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 167771,
@@ -158,6 +158,20 @@
      "state": "open",
      "comments": 9,
      "created": "2026-10-09",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 168138,
+     "title": "[Bug]: 2026.9.9 stable \u2014 doctor pre-migration SQLite snapshot aborts on Synology DSM (\"staging file changed during transfer\"); fix exists in main/beta.2 but no stable ships it",
+     "url": "https://github.com/openclaw/openclaw/issues/168138",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-10",
      "prio": "P0",
      "severe": [
       "P0",
@@ -231,13 +245,13 @@
    "published": "2026-10-05",
    "prerelease": true,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1",
-   "age_hours": 97,
-   "issues_total": 38,
-   "issues_open": 21,
-   "open_p0": 5,
-   "open_severe": 7,
+   "age_hours": 106,
+   "issues_total": 40,
+   "issues_open": 22,
+   "open_p0": 6,
+   "open_severe": 8,
    "verdict": "hold",
-   "why": "5 open P0 and 7 open crash/blocker issues reported against it.",
+   "why": "6 open P0 and 8 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 167771,
@@ -250,6 +264,20 @@
      "severe": [
       "P0",
       "impact:ux-release-blocker"
+     ],
+     "reactions": 1
+    },
+    {
+     "number": 167072,
+     "title": "[Bug]: A Logged-out Tailscale node (NeedsLogin) makes tailscale serve fail, aborting Gateway startup and restart-looping the unit",
+     "url": "https://github.com/openclaw/openclaw/issues/167072",
+     "state": "open",
+     "comments": 4,
+     "created": "2026-10-08",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:crash-loop"
      ],
      "reactions": 1
     },
@@ -282,20 +310,6 @@
      "reactions": 1
     },
     {
-     "number": 167072,
-     "title": "[Bug]: A Logged-out Tailscale node (NeedsLogin) makes tailscale serve fail, aborting Gateway startup and restart-looping the unit",
-     "url": "https://github.com/openclaw/openclaw/issues/167072",
-     "state": "open",
-     "comments": 3,
-     "created": "2026-10-08",
-     "prio": "P0",
-     "severe": [
-      "P0",
-      "impact:crash-loop"
-     ],
-     "reactions": 1
-    },
-    {
      "number": 167671,
      "title": "[Bug]: Gateway SIGBUS on a live agent SQLite -shm mapping under concurrent agent activity",
      "url": "https://github.com/openclaw/openclaw/issues/167671",
@@ -308,6 +322,20 @@
       "impact:crash-loop"
      ],
      "reactions": 2
+    },
+    {
+     "number": 168138,
+     "title": "[Bug]: 2026.9.9 stable \u2014 doctor pre-migration SQLite snapshot aborts on Synology DSM (\"staging file changed during transfer\"); fix exists in main/beta.2 but no stable ships it",
+     "url": "https://github.com/openclaw/openclaw/issues/168138",
+     "state": "open",
+     "comments": 1,
+     "created": "2026-10-10",
+     "prio": "P0",
+     "severe": [
+      "P0",
+      "impact:ux-release-blocker"
+     ],
+     "reactions": 1
     },
     {
      "number": 167172,
@@ -334,17 +362,6 @@
       "impact:crash-loop"
      ],
      "reactions": 1
-    },
-    {
-     "number": 166446,
-     "title": "issue(context-engine): transcript admission guard aborts ordinary turns and native child settlement before inference",
-     "url": "https://github.com/openclaw/openclaw/issues/166446",
-     "state": "open",
-     "comments": 3,
-     "created": "2026-10-07",
-     "prio": "P1",
-     "severe": [],
-     "reactions": 1
     }
    ]
   },
@@ -355,13 +372,13 @@
    "published": "2026-10-03",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.8",
-   "age_hours": 161,
+   "age_hours": 170,
    "issues_total": 300,
-   "issues_open": 128,
-   "open_p0": 23,
-   "open_severe": 32,
+   "issues_open": 124,
+   "open_p0": 26,
+   "open_severe": 35,
    "verdict": "hold",
-   "why": "23 open P0 and 32 open crash/blocker issues reported against it.",
+   "why": "26 open P0 and 35 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 164396,
@@ -489,7 +506,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
-   "age_hours": 174,
+   "age_hours": 183,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 0,
@@ -561,7 +578,7 @@
    "published": "2026-10-02",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
-   "age_hours": 188,
+   "age_hours": 197,
    "issues_total": 0,
    "issues_open": 0,
    "open_p0": 0,
@@ -577,7 +594,7 @@
    "published": "2026-09-30",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.7",
-   "age_hours": 232,
+   "age_hours": 241,
    "issues_total": 300,
    "issues_open": 151,
    "open_p0": 30,
@@ -711,7 +728,7 @@
    "published": "2026-09-29",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
-   "age_hours": 257,
+   "age_hours": 266,
    "issues_total": 8,
    "issues_open": 5,
    "open_p0": 1,
@@ -786,13 +803,13 @@
    "published": "2026-09-23",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.6",
-   "age_hours": 381,
+   "age_hours": 390,
    "issues_total": 300,
-   "issues_open": 188,
-   "open_p0": 58,
+   "issues_open": 187,
+   "open_p0": 57,
    "open_severe": 74,
    "verdict": "hold",
-   "why": "58 open P0 and 74 open crash/blocker issues reported against it.",
+   "why": "57 open P0 and 74 open crash/blocker issues reported against it.",
    "top": [
     {
      "number": 159662,
@@ -916,7 +933,7 @@
    "published": "2026-09-21",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
-   "age_hours": 439,
+   "age_hours": 448,
    "issues_total": 19,
    "issues_open": 8,
    "open_p0": 2,
@@ -1028,7 +1045,7 @@
    "published": "2026-09-19",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.5",
-   "age_hours": 498,
+   "age_hours": 507,
    "issues_total": 300,
    "issues_open": 131,
    "open_p0": 53,
@@ -1161,9 +1178,9 @@
    "published": "2026-09-11",
    "prerelease": false,
    "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.4",
-   "age_hours": 689,
+   "age_hours": 698,
    "issues_total": 300,
-   "issues_open": 139,
+   "issues_open": 143,
    "open_p0": 48,
    "open_severe": 53,
    "verdict": "hold",
@@ -1174,7 +1191,7 @@
      "title": "main (1611ca6d): Gateway reaches ready but never serves; every /health probe times out while the event loop is starved (632-agent fleet)",
      "url": "https://github.com/openclaw/openclaw/issues/149538",
      "state": "open",
-     "comments": 24,
+     "comments": 25,
      "created": "2026-09-16",
      "prio": "P0",
      "severe": [
